@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:regular,500" rel="stylesheet" />
+
+    <title>Better age</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <a href="" class="header__logo"
+            ><svg class="icon-logo">
+              <use xlink:href="./images/better-age-svg-sprite.svg#icon-logo"></use></svg
+          ></a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="">treatments</a></li>
+              <li class="menu__item"><a class="menu__link" href="">ABOUT</a></li>
+              <li class="menu__item"><a class="menu__link" href="">FAQ</a></li>
+              <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
+            </ul>
+          </nav>
+          <label for="UA"></label>
+          <select class="header__select" id="language" name="language">
+            <option value="Ukrainian">UA</option>
+            <option value="Czech">CZ</option>
+          </select>
+          <button class="header__btn btn">book an appointment</button>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

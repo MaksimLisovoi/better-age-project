@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  padding: 0 18px;
+  margin: 0 auto;
+
+  @include for-size(desktop) {
+    max-width: 1344px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: content-box;
+  }
+}

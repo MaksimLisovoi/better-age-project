@@ -1,0 +1,15 @@
+.btn {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  background-color: $blue-bg-color;
+
+  padding: 18px 32px;
+
+  @include for-size(desktop) {
+  }
+}
