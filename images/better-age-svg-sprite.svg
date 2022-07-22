@@ -33,7 +33,7 @@
 <path fill="#1b6ab3" style="fill: var(--color1, #1b6ab3)" d="M87.689 18.304v-18.141h6.998v1.896h-4.491v5.982h3.646v1.798h-3.646v6.635h4.524v1.798h-7.031v0.033z"></path>
 <path fill="#1b6ab3" style="fill: var(--color1, #1b6ab3)" d="M72.228 28.731c0 1.798-1.465 3.269-3.255 3.269s-3.255-1.471-3.255-3.269 3.255-6.57 3.255-6.57c0 0 3.255 4.74 3.255 6.57z"></path>
 </symbol>
-<symbol id="icon-menu-icon" viewBox="0 0 96 32">
+<symbol id="icon-menu" viewBox="0 0 96 32">
 <path fill="#1b6ab3" style="fill: var(--color1, #1b6ab3)" d="M0 0h96v6.4h-96v-6.4z"></path>
 <path fill="#1b6ab3" style="fill: var(--color1, #1b6ab3)" d="M0 25.6h96v6.4h-96v-6.4z"></path>
 </symbol>

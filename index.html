@@ -20,28 +20,82 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- //HEADER// -->
+
       <header class="header">
         <div class="header__container container">
           <a href="" class="header__logo"
             ><svg class="icon-logo">
               <use xlink:href="./images/better-age-svg-sprite.svg#icon-logo"></use></svg
           ></a>
-          <nav class="header__menu menu">
-            <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link" href="">treatments</a></li>
-              <li class="menu__item"><a class="menu__link" href="">ABOUT</a></li>
-              <li class="menu__item"><a class="menu__link" href="">FAQ</a></li>
-              <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
-            </ul>
-          </nav>
-          <label for="UA"></label>
-          <select class="header__select" id="language" name="language">
-            <option value="Ukrainian">UA</option>
-            <option value="Czech">CZ</option>
-          </select>
-          <button class="header__btn btn">book an appointment</button>
+          <div class="header__menu-block">
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="">treatments</a></li>
+                <li class="menu__item"><a class="menu__link" href="">ABOUT</a></li>
+                <li class="menu__item"><a class="menu__link" href="">FAQ</a></li>
+                <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
+              </ul>
+            </nav>
+            <label for="UA"></label>
+            <select class="header__select" id="language" name="language">
+              <option value="Ukrainian">UA</option>
+              <option value="Czech">CZ</option>
+            </select>
+            <button class="header__btn btn">book an appointment</button>
+          </div>
+          <button class="header__btn-menu-mob">
+            <svg class="icon-menu">
+              <use xlink:href="./images/better-age-svg-sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </header>
+      <!-- //MAIN// -->
+
+      <main class="page">
+        <!-- //HERO PAGE// -->
+
+        <div class="page__main-block main-block">
+          <div class="main-block__container container">
+            <div class="main-block__body">
+              <div class="main-block__title-block">
+                <h1 class="title-block__title first-title">CUSTOMIZED SKINCARE</h1>
+                <h1 class="title-block__title">FOR ALL</h1>
+              </div>
+              <button class="btn btn-mobile">book an appointment</button>
+            </div>
+          </div>
+          <div class="main-block__image _ibg">
+            <img src="./images/imgs/hero-desktop.jpg" alt="main cover" />
+          </div>
+        </div>
+
+        <!-- //SECTION TREATMENTS// -->
+
+        <section class="page__treatments treatments">
+          <div class="treatments__container container">
+            <div class="treatments__body">
+              <h2 class="treatments__header">top beauty treatment</h2>
+              <ul class="treatments__list">
+                <li class="treatment__item item-treatment">
+                  <div class="item-treatment__block">
+                    <div class="item-treatment__descr-block">
+                      <h3 class="item-treatment__title">CHARM FACE</h3>
+                      <div class="item-treatment__icon"></div>
+                      <p class="item-treatment__description">
+                        Masáž Charm Face je přístrojovou masáží a její účinnost je zajištěna pomocí
+                        vibrací o různě nastavitelných frekvencích. Působí zároveň na tří vrstvy:
+                        kůži, podkoží a svaly.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>

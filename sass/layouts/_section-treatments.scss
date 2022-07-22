@@ -1,0 +1,41 @@
+.page__treatments {
+}
+.treatments {
+}
+.treatments__container {
+}
+
+.treatments__header {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.treatments__body {
+}
+.treatments__list {
+  display: flex;
+  margin: 0 -12px;
+}
+.treatment__item {
+  padding: 0 15px;
+  flex: 0 1 33.333%;
+}
+.item-treatment__block {
+  background-color: tomato;
+}
+.item-treatment__descr-block {
+}
+.item-treatment__title {
+  font-family: 'Oswald';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+
+  text-transform: uppercase;
+}
+.item-treatment__icon {
+}
+.item-treatment__description {
+}

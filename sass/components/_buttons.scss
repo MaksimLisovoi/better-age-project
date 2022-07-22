@@ -1,4 +1,8 @@
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
@@ -8,7 +12,8 @@
   color: $secondary-text-color;
   background-color: $blue-bg-color;
 
-  padding: 18px 32px;
+  padding: 0 32px;
+  min-height: 60px;
 
   @include for-size(desktop) {
   }

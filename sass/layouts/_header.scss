@@ -1,24 +1,48 @@
 .header {
-  @include for-size(desktop) {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 50;
-  }
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
 }
 .header__container {
   display: flex;
+  justify-content: space-between;
+  align-items: start;
 
-  min-height: 70px;
-  align-items: center;
+  min-height: 35px;
+  padding-top: 30px;
+
+  @include for-size(desktop) {
+    min-height: 70px;
+    align-items: center;
+  }
 }
 .icon-logo {
-  width: 148px;
+  width: 104px;
+  height: 35px;
+
+  @include for-size(desktop) {
+    width: 148px;
+    height: 50px;
+  }
+}
+.icon-menu {
+  width: 30px;
+  height: 10px;
+}
+.header__menu-block {
+  display: none;
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .header__menu {
-  margin-left: 352px;
+  //   margin-left: 352px;
 }
 .menu {
 }
@@ -38,6 +62,15 @@
   color: inherit;
 }
 .header__select {
+  color: inherit;
+  border: none;
+  background-color: transparent;
+
+  margin-right: 40px;
 }
-.header__btn {
+
+.header__btn-menu-mob {
+  @include for-size(desktop) {
+    display: none;
+  }
 }
