@@ -90,6 +90,11 @@ img {
   margin: 0 auto;
   box-sizing: content-box;
 }
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+}
 @media (min-width: 1200px) {
   .container {
     padding: 0 12px;
@@ -190,8 +195,21 @@ img {
   color: #ffffff;
   background-color: #1b6ab3;
   padding: 0 32px;
-  min-height: 60px;
+  min-height: 50px;
 }
+@media (min-width: 768px) {
+  .btn {
+    font-size: 10px;
+    min-height: 33px;
+  }
+}
+@media (min-width: 1200px) {
+  .btn {
+    min-height: 60px;
+    font-size: 16px;
+  }
+}
+
 .main-block {
   position: relative;
 }
@@ -212,6 +230,7 @@ img {
 .main-block__title-block {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 @media (min-width: 1200px) {
   .main-block__title-block {
@@ -263,26 +282,121 @@ img {
   }
 }
 
+.treatments__container {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .treatments__container {
+    padding: 0 24px;
+  }
+}
+
 .treatments__header {
+  font-family: Roboto;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  padding-bottom: 40px;
+  padding: 0px 18px 40px 18px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .treatments__header {
+    padding: 0 0 40px 0;
+    font-size: 48px;
+    text-align: left;
+  }
+}
+
+.treatments__body {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .treatments__body {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    padding-left: 204px;
+  }
 }
 
 .treatments__list {
   display: flex;
-  margin: 0 -12px;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .treatments__list {
+    flex-direction: row;
+    margin: 0 -12px;
+  }
 }
 
 .treatment__item {
-  padding: 0 15px;
-  flex: 0 1 33.333%;
+  flex: 0 1 100%;
+  padding: 12px 0;
+}
+@media (min-width: 768px) {
+  .treatment__item {
+    padding: 0 12px;
+    flex: 0 1 33.333%;
+  }
 }
 
 .item-treatment__block {
-  background-color: tomato;
+  padding-top: 48vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  .item-treatment__block {
+    padding-top: 13.5vw;
+  }
+}
+@media (min-width: 1200px) {
+  .item-treatment__block {
+    padding-top: 170px;
+  }
+}
+
+.item-treatment__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.item-treatment__descr-block {
+  position: relative;
+  background-color: #dcd7c8;
+  flex: 0 1 55%;
+  padding: 12px 12px 14px 12px;
+}
+@media (min-width: 768px) {
+  .item-treatment__descr-block {
+    flex: 0 1 60%;
+    padding: 10px 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .item-treatment__descr-block {
+    flex: 0 1 60%;
+    padding: 20px 20px;
+  }
+}
+
+.item-treatment__descr-block.descr-block__blue {
+  background-color: #1b6ab3;
+  color: #f5f0e2;
+}
+
+.item-treatment__descr-block.descr-block__light-blue {
+  background-color: #8abde2;
+  color: #f5f0e2;
 }
 
 .item-treatment__title {
@@ -291,4 +405,79 @@ img {
   font-size: 20px;
   line-height: 1.3;
   text-transform: uppercase;
+  font-size: 5vw;
+  margin-bottom: 6vw;
+}
+@media (min-width: 768px) {
+  .item-treatment__title {
+    font-size: 1.4vw;
+    margin-bottom: 2.2vw;
+  }
+}
+@media (min-width: 1200px) {
+  .item-treatment__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.item-treatment__icon {
+  width: 3.5vw;
+  height: 4vw;
+  margin-bottom: 4vw;
+}
+@media (min-width: 768px) {
+  .item-treatment__icon {
+    width: 1.2vw;
+    height: 1.4vw;
+    margin-bottom: 1vw;
+  }
+}
+@media (min-width: 1200px) {
+  .item-treatment__icon {
+    width: 11px;
+    height: 13px;
+    margin-bottom: 18px;
+  }
+}
+
+.item-treatment__description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 3.2vw;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .item-treatment__description {
+    font-size: 1.14vw;
+  }
+}
+@media (min-width: 1200px) {
+  .item-treatment__description {
+    font-size: 12px;
+  }
+}
+
+.treatments__btn {
+  display: block;
+  position: inherit;
+  left: 0;
+  top: 0;
+  transform: rotate(0);
+  margin: 50px auto 0 auto;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .treatments__btn {
+    position: absolute;
+    left: 134px;
+    top: 40%;
+    transform: rotate(-90deg);
+  }
 }/*# sourceMappingURL=main.css.map */

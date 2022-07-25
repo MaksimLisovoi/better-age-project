@@ -22,6 +22,7 @@
 .main-block__title-block {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 
   @include for-size(desktop) {
     flex-direction: row;

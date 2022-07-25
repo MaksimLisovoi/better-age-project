@@ -1,10 +1,15 @@
 .container {
   // width: 100%;
+  // outline: 1px solid tomato;
   max-width: 1344px;
   padding: 0 18px;
   margin: 0 auto;
 
   box-sizing: content-box;
+
+  @include for-size(tablet-landscape) {
+    padding: 0 24px;
+  }
   @include for-size(desktop) {
     padding: 0 12px;
   }
