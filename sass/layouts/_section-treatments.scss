@@ -2,11 +2,20 @@
 }
 .treatments {
 }
-.treatments__container {
-  padding: 0;
+// .treatments__container {
+//   padding: 0;
 
-  @include for-size(tablet-landscape) {
-    padding: 0 24px;
+//   @include for-size(tablet-landscape) {
+//     padding: 0 24px;
+//   }
+//   @include for-size(desktop) {
+//     padding: 0 12px;
+//   }
+// }
+
+@media screen and (max-width: 767px) {
+  .treatments__container {
+    padding: 0;
   }
 }
 
@@ -30,11 +39,24 @@
 .treatments__body {
   padding-top: 50px;
   padding-bottom: 60px;
+  @include for-size(tablet-landscape) {
+    padding-bottom: 40px;
+  }
+
   @include for-size(desktop) {
     position: relative;
     padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .treatments__body {
     padding-left: 204px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1343px) {
+  .treatments__body {
+    padding-left: 100px;
   }
 }
 .treatments__list {
@@ -53,8 +75,8 @@
   padding: 12px 0;
 
   @include for-size(tablet-landscape) {
-    padding: 0 12px;
     flex: 0 1 33.333%;
+    padding: 0 12px;
   }
 }
 .item-treatment__block {
@@ -62,6 +84,8 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
+
+  height: 100%;
 
   @include for-size(tablet-landscape) {
     padding-top: 13.5vw;
@@ -88,7 +112,7 @@
   @include for-size(tablet-landscape) {
     flex: 0 1 60%;
 
-    padding: 10px 10px;
+    padding: 1.3vw 1.3vw;
   }
   @include for-size(desktop) {
     flex: 0 1 60%;
@@ -175,8 +199,15 @@
 
   @include for-size(desktop) {
     position: absolute;
-    left: 134px;
-    top: 40%;
+
+    margin: 0;
+    left: 35px;
+    top: 55%;
     transform: rotate(-90deg);
+  }
+}
+@media screen and (min-width: 1344px) {
+  .treatments__btn {
+    left: 141px;
   }
 }

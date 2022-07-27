@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
@@ -11,7 +11,8 @@
   align-items: start;
 
   min-height: 35px;
-  padding-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 15px;
 
   @include for-size(desktop) {
     min-height: 70px;
@@ -33,7 +34,7 @@
 }
 .header__menu-block {
   display: none;
-  @include for-size(desktop) {
+  @include for-size(tablet-landscape) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +61,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: inherit;
+
+  @include for-size(tablet-landscape) {
+    font-size: 12px;
+  }
 }
 .header__select {
   color: inherit;
@@ -67,10 +72,21 @@
   background-color: transparent;
 
   margin-right: 40px;
-}
 
-.header__btn-menu-mob {
+  @include for-size(tablet-landscape) {
+    font-size: 12px;
+  }
+}
+.header__btn.btn {
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
   @include for-size(desktop) {
+    display: block;
+  }
+}
+.header__btn-menu-mob {
+  @include for-size(tablet-landscape) {
     display: none;
   }
 }

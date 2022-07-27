@@ -32,6 +32,7 @@ body {
   height: 100%;
   line-height: 1.6;
   font-family: roboto, sans-serif;
+  background-color: $white-bg-color;
   color: $primary-text-color;
   font-family: 'Roboto';
   font-size: 14px;
@@ -70,4 +71,7 @@ img {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+.inverted {
+  background-color: $white-bg-color;
 }

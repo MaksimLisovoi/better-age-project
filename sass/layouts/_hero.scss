@@ -30,6 +30,13 @@
     align-items: flex-end;
   }
 }
+.title-block__line {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
+}
 .title-block__title {
   font-family: 'Roboto';
   font-size: 36px;
@@ -62,6 +69,10 @@
   max-width: 410px;
   margin-top: 30px;
   margin: 0 auto;
+
+  @include for-size(tablet-landscape) {
+    max-width: 266px;
+  }
   @include for-size(desktop) {
     display: none;
   }
