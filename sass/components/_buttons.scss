@@ -21,7 +21,7 @@
   }
 
   @include for-size(desktop) {
-    min-height: 60px;
     font-size: 16px;
+    min-height: 50px;
   }
 }

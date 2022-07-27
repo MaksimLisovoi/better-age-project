@@ -56,9 +56,7 @@
 }
 
 .clients__title-block {
-  @include for-size(tablet-landscape) {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 .title-block__header {

@@ -11,8 +11,8 @@
   align-items: start;
 
   min-height: 35px;
-  padding-top: 25px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 
   @include for-size(desktop) {
     min-height: 70px;
