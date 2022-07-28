@@ -107,15 +107,15 @@
   background-color: #dcd7c8;
   flex: 0 1 55%;
 
-  padding: 12px 12px 14px 12px;
+  // padding: 16px 16px 18px 16px;
+  padding: 3.1vw 3.1vw 3.5vw 3.1vw;
 
   @include for-size(tablet-landscape) {
-    flex: 0 1 60%;
-
-    padding: 1.3vw 1.3vw;
+    flex: 0 1 75%;
+    padding: 1.82vw;
   }
   @include for-size(desktop) {
-    flex: 0 1 60%;
+    flex: 0 1 63%;
 
     padding: 20px 20px;
   }
@@ -210,4 +210,14 @@
   .treatments__btn {
     left: 141px;
   }
+}
+.treatments__btn::after {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 11px;
+  margin: 0 0 0 4px;
+  background-image: url(../../images/icons/see-all-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }

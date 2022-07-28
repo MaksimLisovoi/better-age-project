@@ -33,16 +33,18 @@
   //   justify-content: space-between;
   display: flex;
   justify-content: flex-end;
-
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding: 50px 0 70px 0;
 
   @include for-size(tablet-landscape) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 61px;
+
+    padding: 50px 61px 100px 0;
   }
 
   @include for-size(desktop) {
-    padding-top: 60px;
-    padding-bottom: 130px;
+    padding: 60px 96px 130px 0;
   }
 
   //   padding-right: 108px;
@@ -63,7 +65,7 @@
 
   color: $beige-text-color;
   @include for-size(tablet-landscape) {
-    font-size: 14px;
+    font-size: 18px;
   }
   @include for-size(desktop) {
     font-size: 30px;
