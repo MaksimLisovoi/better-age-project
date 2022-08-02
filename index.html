@@ -24,31 +24,34 @@
 
       <header class="header">
         <div class="header__container container">
-          <a href="" class="header__logo"
-            ><svg class="icon-logo">
-              <use xlink:href="./images/better-age-svg-sprite.svg#icon-logo"></use></svg
-          ></a>
-          <div class="header__menu-block">
-            <nav class="header__menu menu">
-              <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="">treatments</a></li>
-                <li class="menu__item"><a class="menu__link" href="">ABOUT</a></li>
-                <li class="menu__item"><a class="menu__link" href="">FAQ</a></li>
-                <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
-              </ul>
-            </nav>
-            <label for="UA"></label>
-            <select class="header__select" id="language" name="language">
-              <option value="Ukrainian">UA</option>
-              <option value="Czech">CZ</option>
-            </select>
-            <button class="header__btn btn">book an appointment</button>
+          <div class="header__body">
+            <a href="" class="header__logo-link"
+              ><svg class="icon-logo">
+                <use xlink:href="./images/better-age-svg-sprite.svg#icon-logo"></use></svg
+            ></a>
+            <div class="header__menu-block">
+              <nav class="header__menu menu">
+                <ul class="menu__list menu-list">
+                  <li class="menu__item"><a class="menu__link" href="">treatments</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">ABOUT</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">FAQ</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
+                </ul>
+              </nav>
+              <label for="UA"></label>
+              <select class="header__select" id="language" name="language">
+                <option value="Ukrainian">UA</option>
+                <option value="Czech">CZ</option>
+              </select>
+              <button class="header__btn btn">book an appointment</button>
+            </div>
+            <div class="burger-wrap">
+              <button class="header__btn-menu-mob burger">
+                <span class="burger__first-line"></span>
+                <span class="burger__second-line"></span>
+              </button>
+            </div>
           </div>
-          <button class="header__btn-menu-mob">
-            <svg class="icon-menu">
-              <use xlink:href="./images/better-age-svg-sprite.svg#icon-menu"></use>
-            </svg>
-          </button>
         </div>
       </header>
       <!-- //MAIN// -->
@@ -255,9 +258,29 @@
             </div>
           </div>
         </section>
+
+        <section class="section__follow follow">
+          <div class="follow__content-block">
+            <div class="follow__container container">
+              <div class="follow__body">
+                <ul class="follow__img-list">
+                  <li class="follow__item"><img src="./images/imgs/follow-desc-1.jpg" alt="" /></li>
+                  <li class="follow__item"><img src="./images/imgs/follow-desc-2.jpg" alt="" /></li>
+                  <li class="follow__item"><img src="./images/imgs/follow-desc-3.jpg" alt="" /></li>
+                  <li class="follow__item"><img src="./images/imgs/follow-desc-4.jpg" alt="" /></li>
+                </ul>
+                <h2></h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="follow__sidebar">
+            <img src="./images/imgs/follow-side-2.jpg" alt="" />
+          </div>
+        </section>
       </main>
     </div>
-
     <!-- <script src="./js/scroll-header.js"></script> -->
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>

@@ -101,6 +101,7 @@
 
   @include for-size(tablet-landscape) {
     min-width: 264px;
+    margin: 0;
   }
 
   @include for-size(desktop) {
