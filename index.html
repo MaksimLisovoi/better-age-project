@@ -22,7 +22,7 @@
     <div class="wrapper">
       <!-- //HEADER// -->
 
-      <header class="header">
+      <header class="header header--visible header--transparent-bg" js-header>
         <div class="header__container container">
           <div class="header__body">
             <a href="" class="header__logo-link"
@@ -71,7 +71,7 @@
             </div>
           </div>
           <div class="main-block__image _ibg">
-            <img src="./images/imgs/hero-desktop.jpg" alt="main cover" />
+            <img loading="lazy" src="./images/imgs/hero-desktop.jpg" alt="main cover" />
           </div>
         </div>
 
@@ -85,7 +85,11 @@
                 <li class="treatment__item item-treatment">
                   <div class="item-treatment__block">
                     <div class="item-treatment__img _ibg">
-                      <img src="./images/imgs/beauty-treatment-desktop-1.jpg" alt="" />
+                      <img
+                        loading="lazy"
+                        src="./images/imgs/beauty-treatment-desktop-1.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="item-treatment__descr-block">
                       <h3 class="item-treatment__title">CHARM FACE</h3>
@@ -107,7 +111,11 @@
                 <li class="treatment__item item-treatment">
                   <div class="item-treatment__block">
                     <div class="item-treatment__img _ibg">
-                      <img src="./images/imgs/beauty-treatment-desktop-2.jpg" alt="" />
+                      <img
+                        loading="lazy"
+                        src="./images/imgs/beauty-treatment-desktop-2.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="item-treatment__descr-block descr-block__blue">
                       <h3 class="item-treatment__title">CHARM FACE</h3>
@@ -129,7 +137,12 @@
                 <li class="treatment__item item-treatment">
                   <div class="item-treatment__block">
                     <div class="item-treatment__img _ibg">
-                      <img src="./images/imgs/beauty-treatment-desktop-3.jpg" alt="" />
+                      <img
+                        loading="lazy"
+                        loading="lazy"
+                        src="./images/imgs/beauty-treatment-desktop-3.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="item-treatment__descr-block descr-block__light-blue">
                       <h3 class="item-treatment__title">CHARM FACE</h3>
@@ -163,7 +176,7 @@
                 <div class="offer__block">
                   <div class="offer__item item-offer">
                     <div class="item-offer__img _ibg">
-                      <img src="./images/imgs/special-offer-mob.jpg" alt="" />
+                      <img loading="lazy" src="./images/imgs/special-offer-mob.jpg" alt="" />
                     </div>
 
                     <div class="item-offer__content-block">
@@ -208,7 +221,7 @@
                 <h2 class="clients__header">Our Clients Before & Afters</h2>
 
                 <div class="clients__img">
-                  <img src="./images/imgs/before-after-mob-desktop.jpg" alt="" />
+                  <img loading="lazy" src="./images/imgs/before-after-mob-desktop.jpg" alt="" />
                 </div>
 
                 <div class="clients__title-block title-block">
@@ -222,7 +235,7 @@
               </div>
 
               <div class="clients__sidebar">
-                <img src="./images/imgs/before-after-sidebar-small.jpg" alt="" />
+                <img loading="lazy" src="./images/imgs/before-after-sidebar-small.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -232,7 +245,7 @@
           <div class="test__container container">
             <div class="test__body">
               <div class="test__img">
-                <img src="./images/imgs/test-desktop.jpg" alt="" />
+                <img loading="lazy" src="./images/imgs/test-desktop.jpg" alt="" />
               </div>
 
               <div class="test__content">
@@ -264,23 +277,112 @@
             <div class="follow__container container">
               <div class="follow__body">
                 <ul class="follow__img-list">
-                  <li class="follow__item"><img src="./images/imgs/follow-desc-1.jpg" alt="" /></li>
-                  <li class="follow__item"><img src="./images/imgs/follow-desc-2.jpg" alt="" /></li>
-                  <li class="follow__item"><img src="./images/imgs/follow-desc-3.jpg" alt="" /></li>
-                  <li class="follow__item"><img src="./images/imgs/follow-desc-4.jpg" alt="" /></li>
+                  <li class="follow__item">
+                    <img loading="lazy" src="./images/imgs/follow-desc-1.jpg" alt="" />
+                  </li>
+                  <li class="follow__item">
+                    <img loading="lazy" src="./images/imgs/follow-desc-2.jpg" alt="" />
+                  </li>
+                  <li class="follow__item follow__item--mob-hide">
+                    <img loading="lazy" src="./images/imgs/follow-desc-3.jpg" alt="" />
+                  </li>
+                  <li class="follow__item">
+                    <img loading="lazy" src="./images/imgs/follow-desc-4.jpg" alt="" />
+                  </li>
+                  <li class="follow__item follow__item-title">
+                    <div class="follow__title-block">
+                      <a href="" class="follow__link">
+                        <h2 class="follow__title--primary">For a good time, follow us</h2>
+                        <h2 class="follow__title--secondary">on instagram</h2>
+                        <svg class="follow__icon">
+                          <use
+                            xlink:href="./images/better-age-svg-sprite.svg#icon-before-after-arrow-right-mob"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
                 </ul>
-                <h2></h2>
               </div>
             </div>
           </div>
 
           <div class="follow__sidebar">
-            <img src="./images/imgs/follow-side-2.jpg" alt="" />
+            <img loading="lazy" src="./images/imgs/follow-side-2.jpg" alt="" />
           </div>
         </section>
+
+        <!-- //FOOTER// -->
+
+        <footer class="footer">
+          <div class="footer__top top-footer">
+            <div class="top-footer__container container">
+              <div class="top-footer__body">
+                <!-- FOOTER-ABOUT -->
+
+                <div class="top-footer__about">
+                  <a href="" class="top-footer__logo header__logo-link"
+                    ><svg class="icon-logo icon-logo__footer">
+                      <use xlink:href="./images/better-age-svg-sprite.svg#icon-logo"></use></svg
+                  ></a>
+                  <p class="top-footer__descr">
+                    BETTER AGE is an advanced skin clinic and retailer of professional skin care
+                    products, located in Praha. We deliver results-focused, relaxing treatments in a
+                    clean, luxurious, welcoming environment.
+                  </p>
+                </div>
+
+                <!-- FOOTER-CONTACT -->
+
+                <div class="top-footer__contact contact-footer">
+                  <h2 class="contact-footer__header">CONTACT / LOCATION</h2>
+
+                  <ul class="contact-footer__list">
+                    <li class="contact-footer__item">
+                      <a href="tel:420778038859" class="contact-footer__link"
+                        ><svg class="contact-footer__icon icon-mob">
+                          <use xlink:href="./images/better-age-svg-sprite.svg#icon-phone-mob"></use>
+                        </svg>
+                        +420 778 038 859</a
+                      >
+                      <a href="" class="contact-footer__link"
+                        ><svg class="contact-footer__icon icon-location">
+                          <use
+                            xlink:href="./images/better-age-svg-sprite.svg#icon-location-pin"
+                          ></use>
+                        </svg>
+                        Mikovcova 476/10, Praha</a
+                      >
+                    </li>
+                    <li class="contact-footer__item">
+                      <p class="contact-footer__link">
+                        <svg class="contact-footer__icon icon-clock">
+                          <use
+                            xlink:href="./images/better-age-svg-sprite.svg#icon-clock"
+                          ></use></svg
+                        >10:00 to 20:00 every day
+                      </p>
+                      <a href="mailto:hlopova.cz@gmail.com " class="contact-footer__link"
+                        ><svg class="contact-footer__icon icon-mail">
+                          <use
+                            xlink:href="./images/better-age-svg-sprite.svg#icon-basic-mail"
+                          ></use></svg
+                        >hlopova.cz@gmail.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <div class="footer__container container"></div>
+          </div>
+        </footer>
       </main>
     </div>
-    <!-- <script src="./js/scroll-header.js"></script> -->
+    <script src="./js/scroll-header.js"></script>
     <script src="./js/burger-menu.js"></script>
   </body>
 </html>
