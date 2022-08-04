@@ -4,7 +4,7 @@
   $desktop: 1200px;
 
   @if $range == phone-only {
-    @media (max-width: #{$mobile - 1}) {
+    @media (max-width: #{$tablet - 1}) {
       @content;
     }
   } @else if $range == tablet-portrait {
