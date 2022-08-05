@@ -11,7 +11,20 @@
 .top-footer {
   // .top-footer__container
 
-  &__container {
+  @media (max-width: 767px) {
+    &__container {
+      padding: 0;
+    }
+
+    &__about {
+      padding: 0 18px;
+
+      border-top: 1px solid $beige-text-color;
+      padding-top: 20px;
+    }
+    &__contact {
+      padding: 0 18px;
+    }
   }
 
   // .top-footer__body
@@ -106,7 +119,7 @@
 
     @include for-size(tablet-landscape) {
       font-size: 14px;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
     }
 
     @include for-size(desktop) {

@@ -2,16 +2,6 @@
 }
 .treatments {
 }
-// .treatments__container {
-//   padding: 0;
-
-//   @include for-size(tablet-landscape) {
-//     padding: 0 24px;
-//   }
-//   @include for-size(desktop) {
-//     padding: 0 12px;
-//   }
-// }
 
 @media screen and (max-width: 767px) {
   .treatments__container {
@@ -80,7 +70,7 @@
   }
 }
 .item-treatment__block {
-  padding-top: 48vw;
+  padding-top: 47vw;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -88,7 +78,7 @@
   height: 100%;
 
   @include for-size(tablet-landscape) {
-    padding-top: 13.5vw;
+    padding-top: 13vw;
   }
 
   @include for-size(desktop) {
@@ -105,17 +95,16 @@
 .item-treatment__descr-block {
   position: relative;
   background-color: #dcd7c8;
-  flex: 0 1 55%;
-
-  // padding: 16px 16px 18px 16px;
-  padding: 3.1vw 3.1vw 3.5vw 3.1vw;
+  flex: 0 1 59%;
+  padding: 5vw 5.7vw 5vw 5vw;
 
   @include for-size(tablet-landscape) {
-    flex: 0 1 75%;
+    flex: 0 1 78%;
+    min-height: 175px;
     padding: 1.82vw;
   }
   @include for-size(desktop) {
-    flex: 0 1 63%;
+    flex: 0 1 230px;
 
     padding: 20px 20px;
   }
@@ -136,10 +125,10 @@
   text-transform: uppercase;
 
   font-size: 5vw;
-  margin-bottom: 6vw;
+  margin-bottom: 11vw;
 
   @include for-size(tablet-landscape) {
-    font-size: 1.4vw;
+    font-size: 1.8vw;
     margin-bottom: 2.2vw;
   }
 
@@ -172,7 +161,7 @@
   line-height: 1.4;
 
   @include for-size(tablet-landscape) {
-    font-size: 1.14vw;
+    font-size: 1.3vw;
   }
 
   @include for-size(desktop) {

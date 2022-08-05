@@ -1,0 +1,126 @@
+.page-treatments {
+  // .page-treatments_list
+
+  &__list {
+    display: flex;
+
+    @include for-size(tablet-landscape) {
+      flex-wrap: wrap;
+      margin: -8px;
+    }
+
+    @include for-size(desktop) {
+      margin: -12px;
+    }
+  }
+
+  &__item {
+    @include for-size(tablet-landscape) {
+      flex: 0 1 50%;
+      padding: 8px;
+    }
+
+    @include for-size(desktop) {
+      padding: 12px;
+    }
+  }
+
+  &__block {
+    @include for-size(tablet-landscape) {
+      padding-top: 11vw;
+    }
+
+    @include for-size(desktop) {
+      padding-top: 290px;
+    }
+  }
+
+  &__descr-block {
+    @include for-size(tablet-landscape) {
+      flex: 0 1 57%;
+      min-height: 200px;
+    }
+
+    @include for-size(desktop) {
+      flex: 0 1 230px;
+    }
+  }
+
+  // .page-treatments__text-block
+
+  &__text-block {
+    background-color: $light-blue-bg-color;
+    color: $beige-text-color;
+
+    height: 100%;
+
+    padding: 50px 18px 80px 18px;
+
+    @include for-size(tablet-landscape) {
+      padding: 60px 25px 50px 25px;
+    }
+
+    @include for-size(desktop) {
+      padding: 140px 96px 150px 96px;
+    }
+  }
+
+  // .page-treatments__header
+
+  &__header {
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    font-size: 20px;
+    margin-bottom: 40px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  // .page-treatments__text
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 1.6;
+
+    font-size: 12px;
+
+    @include for-size(desktop) {
+      font-size: 16px;
+    }
+  }
+
+  // .page-treatments__container
+
+  &__container {
+  }
+
+  // .page-treatments__body
+
+  &__body {
+    @include for-size(tablet-landscape) {
+      padding: 60px 0;
+    }
+
+    @include for-size(desktop) {
+      padding-top: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-treatments__item--main {
+    padding-top: 0;
+  }
+}
