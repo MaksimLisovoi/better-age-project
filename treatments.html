@@ -25,14 +25,16 @@
       <header class="header header--visible header--transparent-bg" js-header>
         <div class="header__container container">
           <div class="header__body">
-            <a href="" class="header__logo-link"
+            <a href="./index.html" class="header__logo-link"
               ><svg class="icon-logo">
                 <use xlink:href="./images/better-age-svg-sprite.svg#icon-logo"></use></svg
             ></a>
             <div class="header__menu-block">
               <nav class="header__menu menu">
                 <ul class="menu__list menu-list">
-                  <li class="menu__item"><a class="menu__link" href="">treatments</a></li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="./treatments.html">treatments</a>
+                  </li>
                   <li class="menu__item"><a class="menu__link" href="">ABOUT</a></li>
                   <li class="menu__item"><a class="menu__link" href="">FAQ</a></li>
                   <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
@@ -71,7 +73,25 @@
             </div>
           </div>
           <div class="main-block__image _ibg">
-            <img loading="lazy" src="./images/imgs/hero-desktop.jpg" alt="main cover" />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/imgs-treatments/treatments-hero-1673.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/imgs-treatments/treatments-hero-1200-2.jpg"
+              />
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/imgs-treatments/treatments-hero-768.jpg"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="./images/imgs-treatments/treatments-hero-480.jpg"
+              />
+              <img src="./images/imgs-treatments/treatments-hero-480.jpg" alt="" />
+            </picture>
           </div>
         </div>
       </main>
@@ -85,7 +105,7 @@
               <!-- FOOTER-ABOUT -->
 
               <div class="top-footer__about">
-                <a href="" class="top-footer__logo header__logo-link"
+                <a href="./index.html" class="top-footer__logo header__logo-link"
                   ><svg class="icon-logo icon-logo__footer">
                     <use xlink:href="./images/better-age-svg-sprite.svg#icon-logo"></use></svg
                 ></a>
@@ -172,7 +192,7 @@
               <div class="bottom-footer__nav nav-footer">
                 <ul class="nav-footer__list">
                   <li class="nav-footer__item">
-                    <a href="" class="nav-footer__link">treatments</a>
+                    <a href="./treatments.html" class="nav-footer__link">treatments</a>
                   </li>
                   <li class="nav-footer__item"><a href="" class="nav-footer__link">About</a></li>
                   <li class="nav-footer__item"><a href="" class="nav-footer__link">FAQ</a></li>
