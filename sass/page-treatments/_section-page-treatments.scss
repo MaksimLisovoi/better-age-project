@@ -4,6 +4,8 @@
   &__list {
     display: flex;
 
+    margin: -12px;
+
     @include for-size(tablet-landscape) {
       flex-wrap: wrap;
       margin: -8px;
@@ -109,8 +111,9 @@
   // .page-treatments__body
 
   &__body {
+    padding-top: 12px;
     @include for-size(tablet-landscape) {
-      padding: 60px 0;
+      padding-top: 60px;
     }
 
     @include for-size(desktop) {
