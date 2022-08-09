@@ -1841,14 +1841,24 @@ img {
   color: #1b6ab3;
   background: none;
   min-height: 50px;
-  width: 100%;
-  max-width: 410px;
-  margin: 50px auto 0 auto;
+  padding: 0 31px;
+}
+@media (min-width: 768px) {
+  .we-believe__btn {
+    margin: 50px 0 0 0;
+  }
 }
 @media (min-width: 1200px) {
   .we-believe__btn {
     min-height: 60px;
     margin-top: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .we-believe__btn {
+    width: 100%;
+    max-width: 410px;
+    margin: 50px auto 0 auto;
   }
 }
 .we-believe__img {
@@ -1874,18 +1884,320 @@ img {
   display: flex;
 }
 .smth__left {
-  flex: 0 1 50.714%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .smth__left {
+    display: block;
+    flex: 0 1 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .smth__left {
+    flex: 0 1 50.714%;
+  }
 }
 .smth__right {
-  flex: 0 1 49.285%;
+  position: relative;
+  flex: 0 1 100%;
+}
+@media (min-width: 768px) {
+  .smth__right {
+    flex: 0 1 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .smth__right {
+    flex: 0 1 49.285%;
+  }
 }
 
-.left-smth__img {
-  width: 100%;
-  height: 100%;
+.right-smth__text {
+  font-family: "Oswald";
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #f5f0e2;
+  font-size: 16px;
+  max-width: 552px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  padding: 0 18px;
+}
+@media (min-width: 768px) {
+  .right-smth__text {
+    bottom: 30px;
+    left: 30px;
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .right-smth__text {
+    bottom: 100px;
+    left: 100px;
+    font-size: 30px;
+  }
 }
 
-.right-smth__img {
+.intro__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 90px 0 40px 0;
+}
+@media (min-width: 768px) {
+  .intro__body {
+    flex-direction: row;
+    padding: 110px 0 60px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .intro__body {
+    padding: 200px 0 100px 0;
+  }
+}
+.intro__imgs {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 100%;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .intro__imgs {
+    flex: 0 1 44%;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .intro__imgs {
+    flex: 0 1 55.3%;
+  }
+}
+.intro__content {
+  flex: 0 1 100%;
+}
+@media (min-width: 768px) {
+  .intro__content {
+    flex: 0 1 48.8%;
+  }
+}
+@media (min-width: 1200px) {
+  .intro__content {
+    flex: 0 1 33.9%;
+  }
+}
+
+.imgs-intro__left {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .imgs-intro__left {
+    margin-right: 40px;
+    display: block;
+  }
+}
+.imgs-intro__left img {
+  width: 100%;
+}
+.content-intro__text-block {
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .content-intro__text-block {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-intro__text-block {
+    padding-bottom: 50px;
+  }
+}
+.content-intro__header {
+  font-family: "Roboto";
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.17;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .content-intro__header {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+@media (min-width: 1200px) {
+  .content-intro__header {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 40px;
+  }
+}
+.content-intro__descr {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+}
+@media (min-width: 1200px) {
+  .content-intro__descr {
+    font-size: 16px;
+  }
+}
+.content-intro__descr:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .content-intro__descr:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-intro__descr:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.content-intro__list {
+  border-top: 1px solid #1b6ab3;
+  border-bottom: 1px solid #1b6ab3;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.content-intro__item {
+  flex: 0 1 50%;
+}
+.content-intro__item:nth-child(-n+2) {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .content-intro__item:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-intro__item:nth-child(-n+2) {
+    margin-bottom: 40px;
+  }
+}
+.content-intro__title {
+  font-family: "Oswald";
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  .content-intro__title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+.content-intro__subtitle {
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 1;
+  font-size: 14px;
+}
+@media (min-width: 1200px) {
+  .content-intro__subtitle {
+    font-size: 16px;
+  }
+}
+.content-intro__btn {
+  background: none;
+  border: 1px solid #1b6ab3;
+  color: #1b6ab3;
+  margin-top: 40px;
+  width: 100%;
+  min-height: 50px;
+}
+@media (min-width: 1200px) {
+  .content-intro__btn {
+    margin-top: 50px;
+    min-height: 60px;
+  }
+}
+
+.step {
+  display: flex;
+  position: absolute;
+}
+.step__content {
+  background-color: #8abde2;
+  color: #f5f0e2;
+  flex: 0 0 100%;
+}
+.step__body {
+  width: 55.35%;
+  padding: 50px 0 75px 0;
+}
+@media (min-width: 768px) {
+  .step__body {
+    padding: 40px 0 43px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .step__body {
+    padding: 100px 96px 107px 96px;
+  }
+}
+.step__header {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .step__header {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .step__header {
+    margin-bottom: 50px;
+  }
+}
+.step__sidebar {
+  position: relative;
+  padding: 0 0 42.5% 0;
+  flex: 0 0 calc((100vw - 24px) * 0.336 + 12px);
+  transform: translate(-100%, 0px);
+}
+.step__sidebar img {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  -o-object-position: -100px;
+     object-position: -100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.list-step__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .list-step__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .list-step__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+.list-step__title {
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .list-step__title {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .list-step__title {
+    margin-bottom: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
