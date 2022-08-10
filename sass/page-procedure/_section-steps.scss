@@ -9,22 +9,18 @@
     flex: 0 0 100%;
   }
 
-  // .step__container
-
-  &__container {
-  }
-
   // .step__body
 
   &__body {
-    width: 55.35%;
     padding: 50px 0 75px 0;
 
     @include for-size(tablet-landscape) {
-      padding: 40px 0 43px 0;
+      width: 47.9%;
+      padding: 40px 61px 43px 0;
     }
 
     @include for-size(desktop) {
+      width: 55.35%;
       padding: 100px 96px 107px 96px;
     }
   }
@@ -34,12 +30,23 @@
   &__header {
     margin-bottom: 40px;
 
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    font-size: 20px;
+
     @include for-size(tablet-landscape) {
       margin-bottom: 30px;
+
+      font-size: 12px;
     }
 
     @include for-size(desktop) {
       margin-bottom: 50px;
+
+      font-size: 20px;
     }
   }
 
@@ -51,25 +58,44 @@
   // .step__sidebar
 
   &__sidebar {
-    position: relative;
-    padding: 0 0 42.5% 0;
-    flex: 0 0 calc((100vw - 24px) * 0.336 + 12px);
-    transform: translate(-100%, 0px);
+    // flex: 0 0 calc((100vw - 24px) * 0.336 + 12px);
+
+    display: none;
+
+    @include for-size(tablet-landscape) {
+      display: block;
+      position: relative;
+      transform: translate(-100%, 0px);
+
+      flex: 0 0 51.8%;
+      padding: 0 0 42.5% 0;
+    }
+
+    @include for-size(desktop) {
+      flex: 0 0 45.1%;
+
+      padding: 0 0 42.5% 0;
+    }
   }
 
   &__sidebar img {
+    max-width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-position: -100px;
     object-fit: cover;
+    object-position: left;
   }
-  position: absolute;
 }
 
 .list-step {
   // .list-step__item
+
+  &__item {
+    font-family: 'Roboto';
+  }
 
   &__item:not(:last-child) {
     margin-bottom: 35px;
@@ -86,7 +112,11 @@
   // .list-step__title
 
   &__title {
+    font-weight: 500;
+    line-height: 1.6;
+
     margin-bottom: 15px;
+    font-size: 12px;
 
     @include for-size(tablet-landscape) {
       margin-bottom: 10px;
@@ -94,11 +124,42 @@
 
     @include for-size(desktop) {
       margin-bottom: 16px;
+
+      font-size: 18px;
+    }
+  }
+  &__title:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background-size: contain;
+    background-image: url(../images/icons/step-drop-icon.svg);
+
+    margin-right: 14px;
+
+    @include for-size(tablet-landscape) {
+      width: 8px;
+      height: 12px;
+      margin-right: 12px;
+    }
+
+    @include for-size(desktop) {
+      width: 10px;
+      height: 15px;
+      margin-right: 14px;
     }
   }
 
   // .list-step__text
 
   &__text {
+    font-weight: 300;
+    line-height: 1.6;
+
+    font-size: 12px;
+    @include for-size(desktop) {
+      font-size: 16px;
+    }
   }
 }

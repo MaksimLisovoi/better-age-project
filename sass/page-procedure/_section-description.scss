@@ -1,0 +1,166 @@
+.descr {
+  display: flex;
+  flex-direction: column;
+  background-color: $gray-bg-color;
+
+  @include for-size(tablet-landscape) {
+    flex-direction: row;
+  }
+
+  // .descr__content
+
+  &__content {
+    flex: 0 0 100%;
+  }
+
+  // .descr__body
+
+  &__body {
+    padding: 30px 0 40px 0;
+
+    @include for-size(tablet-landscape) {
+      padding: 40px 0 60px 77px;
+      margin-left: auto;
+      width: 51.8%;
+    }
+
+    @include for-size(desktop) {
+      padding: 100px 0 100px 120px;
+      width: 43.6%;
+    }
+  }
+
+  // .descr__sidebar
+  &__sidebar {
+    order: -1;
+    @include for-size(tablet-landscape) {
+      order: 0;
+      position: relative;
+
+      padding: 0 0 66.15% 0;
+      flex: 0 0 48.9%;
+      transform: translate(-206%, 0px);
+    }
+
+    @include for-size(desktop) {
+      flex: 0 0 55%;
+      padding: 0 0 47.6% 0;
+      transform: translate(-182%, 0px);
+    }
+  }
+
+  &__sidebar img {
+    width: 100%;
+    height: 100%;
+
+    @include for-size(tablet-landscape) {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      object-fit: cover;
+    }
+  }
+
+  // .descr__header
+
+  &__header {
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+    @include for-size(tablet-landscape) {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+
+  // .descr__subheader
+
+  &__subheader {
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 1.6;
+
+    font-size: 14px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 12px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 16px;
+    }
+  }
+
+  // .descr__text-block
+
+  &__text-block {
+    margin: 30px 0 40px 0;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 1.6;
+
+    font-size: 12px;
+
+    @include for-size(desktop) {
+      margin: 40px 0 100px 0;
+      font-size: 16px;
+    }
+  }
+
+  // .descr__text
+
+  &__text:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include for-size(desktop) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+  }
+
+  &__item:nth-child(-n + 2) {
+    margin: 0;
+  }
+
+  // .descr__control
+
+  &__control {
+  }
+}
+.container {
+}
+.content-intro {
+  // .content-intro__list
+
+  &__list {
+  }
+
+  // .content-intro__item
+
+  &__item {
+  }
+
+  // .content-intro__title
+
+  &__title {
+  }
+
+  // .content-intro__subtitle
+
+  &__subtitle {
+  }
+}
