@@ -1,9 +1,4 @@
 .what-else {
-  // .what-else__container
-
-  &__container {
-  }
-
   // .what-else__body
 
   &__body {
@@ -49,7 +44,13 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     margin: 0 -8px;
+
+    @include for-size(tablet-landscape) {
+      flex-direction: row;
+      margin: 0 -12px;
+    }
 
     @include for-size(desktop) {
       margin: 0 -12px;

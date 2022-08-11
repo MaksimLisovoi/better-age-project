@@ -2263,10 +2263,15 @@ img {
   }
 }
 
+.siema {
+  margin-bottom: -50px;
+}
+
 .descr {
   display: flex;
   flex-direction: column;
   background-color: #dbdbdb;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .descr {
@@ -2277,19 +2282,19 @@ img {
   flex: 0 0 100%;
 }
 .descr__body {
-  padding: 30px 0 30px 0;
+  padding: 30px 0 82px 0;
 }
 @media (min-width: 768px) {
   .descr__body {
-    padding: 40px 0 40px 77px;
+    padding: 40px 0 122px 77px;
     margin-left: auto;
     width: 51.8%;
   }
 }
 @media (min-width: 1200px) {
   .descr__body {
-    padding: 100px 0 82px 120px;
-    width: 43.6%;
+    padding: 100px 20px 194px 120px;
+    width: 45%;
   }
 }
 .descr__sidebar {
@@ -2299,16 +2304,14 @@ img {
   .descr__sidebar {
     order: 0;
     position: relative;
-    padding: 0 0 66.15% 0;
     flex: 0 0 48.9%;
     transform: translate(-206%, 0px);
   }
 }
 @media (min-width: 1200px) {
   .descr__sidebar {
-    flex: 0 0 55%;
-    padding: 0 0 47.6% 0;
-    transform: translate(-182%, 0px);
+    flex: 0 0 54.65%;
+    transform: translate(-182.5%, 0px);
   }
 }
 .descr__sidebar img {
@@ -2385,19 +2388,69 @@ img {
   margin: 0;
 }
 
+.descr__control-container {
+  position: relative;
+  bottom: 35px;
+}
+@media (min-width: 768px) {
+  .descr__control-container {
+    bottom: 38px;
+  }
+}
+@media (min-width: 1200px) {
+  .descr__control-container {
+    bottom: 75px;
+  }
+}
+
 .descr-ctrl {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
 }
 @media (min-width: 768px) {
   .descr-ctrl {
-    margin-top: 30px;
+    padding: 0 0 0 77px;
+    margin-left: auto;
+    width: 51.8%;
   }
 }
 @media (min-width: 1200px) {
   .descr-ctrl {
-    margin-top: 60px;
+    padding: 0 20px 0 120px;
+    width: 43.6%;
+  }
+}
+.descr-ctrl__dots {
+  display: flex;
+  align-items: center;
+}
+.descr-ctrl__dot:not(:last-child) {
+  margin-right: 20px;
+}
+.descr-ctrl__dot {
+  background: #1b6ab3;
+  border: 2px solid #1b6ab3;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  /* Blue dark */
+}
+@media (min-width: 1200px) {
+  .descr-ctrl__dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+.descr-ctrl__dot--active {
+  border: 2px solid #1b6ab3;
+  background: none;
+  width: 12px;
+  height: 12px;
+}
+@media (min-width: 1200px) {
+  .descr-ctrl__dot--active {
+    width: 14px;
+    height: 14px;
   }
 }
 .descr-ctrl__btn {
@@ -2409,7 +2462,8 @@ img {
 }
 @media (min-width: 768px) {
   .descr-ctrl__icon {
-    width: 40px;
+    width: 42px;
+    height: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -2455,7 +2509,14 @@ img {
 }
 .what-else__list {
   display: flex;
+  flex-direction: column;
   margin: 0 -8px;
+}
+@media (min-width: 768px) {
+  .what-else__list {
+    flex-direction: row;
+    margin: 0 -12px;
+  }
 }
 @media (min-width: 1200px) {
   .what-else__list {
