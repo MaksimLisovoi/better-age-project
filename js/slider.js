@@ -7,7 +7,7 @@ const descrSlider = new Siema({
   draggable: true,
   multipleDrag: true,
   threshold: 20,
-  loop: false,
+  loop: true,
   rtl: false,
   onInit: () => {},
   onChange: () => {},
@@ -16,28 +16,19 @@ const descrSlider = new Siema({
 document.querySelector('.prev').addEventListener('click', () => descrSlider.prev());
 document.querySelector('.next').addEventListener('click', () => descrSlider.next());
 
-const body = document.querySelector('body');
-const whatElseList = document.querySelector('.w-e-list');
+const dotsBlock = document.querySelector('.descr-ctrl__dots');
 
-console.log(body.offsetWidth);
+console.dir(dotsBlock.children[0]);
 
-if (body.offsetWidth < 768) {
-  whatElseList.classList.add('siema-slider');
-} else {
-  whatElseList.classList.remove('siema-slider');
-}
+Siema.prototype.addPagination = function () {
+  for (let i = 0; i < this.innerElements.length; i++) {
+    const btn = document.createElement('span');
+    btn.textContent = i;
+    dotsBlock.appendChild(btn);
 
-const whatElseSlider = new Siema({
-  selector: '.siema-slider',
-  duration: 200,
-  easing: 'ease-out',
-  perPage: 1,
-  startIndex: 0,
-  draggable: true,
-  multipleDrag: true,
-  threshold: 20,
-  loop: false,
-  rtl: false,
-  onInit: () => {},
-  onChange: () => {},
-});
+    btn.addEventListener('click', () => this.goTo(i));
+  }
+};
+
+// Trigger pagination creator
+descrSlider.addPagination();
