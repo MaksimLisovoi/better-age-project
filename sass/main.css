@@ -2431,6 +2431,7 @@ img {
   background: #1b6ab3;
   border: 2px solid #1b6ab3;
   border-radius: 50%;
+  cursor: pointer;
   width: 6px;
   height: 6px;
   /* Blue dark */

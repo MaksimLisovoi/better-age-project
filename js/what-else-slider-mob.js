@@ -9,14 +9,8 @@ const whatElseSlider = new Siema({
   draggable: true,
   multipleDrag: true,
   threshold: 20,
-  loop: true,
+  loop: false,
   rtl: false,
   onInit: () => {},
   onChange: () => {},
 });
-// whatElseSlider.sliderFrame = 'li';
-if (screen.width > 768) {
-  console.log(whatElseSlider.destroy());
-}
-
-document.querySelector('selector');

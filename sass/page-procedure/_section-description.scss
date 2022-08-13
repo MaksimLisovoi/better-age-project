@@ -185,6 +185,8 @@
     border: 2px solid $blue-bg-color;
     border-radius: 50%;
 
+    cursor: pointer;
+
     width: 6px;
     height: 6px;
 
@@ -240,7 +242,7 @@
 }
 
 .siema,
-.siema>div,
-.siema>div>div {
+.siema > div,
+.siema > div > div {
   height: 100%;
 }
