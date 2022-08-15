@@ -1,0 +1,214 @@
+.philosophy {
+  // .philosophy__body
+
+  &__body {
+  }
+
+  // .philosophy__top
+
+  &__top {
+    background-color: $light-blue-bg-color;
+    color: $beige-text-color;
+
+    padding: 50px 0 97px 0;
+
+    @include for-size(tablet-landscape) {
+      padding: 60px 0 97px 0;
+    }
+
+    @include for-size(desktop) {
+      padding: 100px 0 176px 0;
+
+      margin-bottom: -126px;
+    }
+  }
+
+  // .philosophy__bottom
+
+  &__bottom {
+  }
+}
+
+.top-philosophy {
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title-block {
+    @include for-size(tablet-landscape) {
+      max-width: 473px;
+      text-align: center;
+    }
+    @include for-size(desktop) {
+      max-width: 744px;
+    }
+  }
+  // .top-philosophy__title
+
+  &__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    text-transform: uppercase;
+
+    line-height: 1.5;
+    font-size: 20px;
+
+    margin-bottom: 40px;
+
+    @include for-size(tablet-landscape) {
+      line-height: 1.17;
+      font-size: 28px;
+
+      margin-bottom: 20px;
+    }
+    @include for-size(desktop) {
+      line-height: 1.16;
+      font-size: 48px;
+
+      margin-bottom: 30px;
+    }
+  }
+
+  // .top-philosophy__subtitle
+
+  &__subtitle {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.6;
+
+    @include for-size(tablet-landscape) {
+      font-size: 16px;
+    }
+  }
+}
+
+.bottom-philosophy {
+  // .bottom-philosophy__container
+
+  &__container {
+  }
+
+  // .bottom-philosophy__body
+
+  &__body {
+    display: flex;
+
+    @include for-size(desktop) {
+      padding: 126px 0 180px 0;
+    }
+  }
+
+  // .bottom-philosophy__left
+
+  &__left {
+    @include for-size(tablet-landscape) {
+      flex: 0 1 37.8%;
+    }
+    @include for-size(desktop) {
+      flex: 0 1 48.2%;
+    }
+  }
+
+  // .bottom-philosophy__right
+
+  &__right {
+    @include for-size(tablet-landscape) {
+      flex: 0 1 63.2%;
+      padding-left: 77px;
+    }
+
+    @include for-size(desktop) {
+      flex: 0 1 51.8%;
+      padding-left: 120px;
+    }
+  }
+}
+
+.left-philosophy {
+  // .left-philosophy__img
+
+  &__img {
+    margin-bottom: 30px;
+
+    width: 100%;
+
+    @include for-size(tablet-landscape) {
+      margin-bottom: 132px;
+    }
+    @include for-size(desktop) {
+      margin-bottom: 90px;
+    }
+  }
+
+  // .left-philosophy__content
+
+  &__content {
+    @include for-size(desktop) {
+      padding-left: 96px;
+    }
+  }
+
+  // .left-philosophy__header
+
+  &__header {
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    font-size: 20px;
+    margin-bottom: 30px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 24px;
+    }
+    @include for-size(desktop) {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+  }
+
+  // .left-philosophy__text
+
+  &__text {
+  }
+}
+.right-philosophy {
+  // .right-philosophy__img-absolute
+
+  &__img-absolute {
+    @include for-size(tablet-landscape) {
+      padding-left: 61px;
+    }
+
+    @include for-size(desktop) {
+      padding-left: 96px;
+      margin-bottom: -46px;
+
+      position: relative;
+      top: -126px;
+      left: 0;
+    }
+  }
+
+  // .right-philosophy__img
+
+  &__img {
+    margin-bottom: 30px;
+
+    @include for-size(tablet-landscape) {
+      //  width: 100%;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 51px;
+    }
+  }
+
+  // .right-philosophy__content
+
+  &__content {
+  }
+}

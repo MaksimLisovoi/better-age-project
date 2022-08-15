@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&subset=cyrillic-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:500&subset=cyrillic-ext"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Inter:regular,500" rel="stylesheet" />
+
+    <title>Better age</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- //HEADER// -->
+
+      <header class="header header--visible header--transparent-bg" js-header>
+        <div class="header__container container">
+          <div class="header__body">
+            <a href="./index.html" class="header__logo-link"
+              ><svg class="icon-logo">
+                <use xlink:href="./images/better-age-svg-sprite.svg#icon-logo"></use></svg
+            ></a>
+            <div class="header__menu-block">
+              <nav class="header__menu menu">
+                <ul class="menu__list menu-list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="./treatments.html">treatments</a>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="./about.html">ABOUT</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">FAQ</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
+                </ul>
+              </nav>
+              <label for="UA"></label>
+              <select class="header__select" id="language" name="language">
+                <option value="Ukrainian">UA</option>
+                <option value="Czech">CZ</option>
+              </select>
+              <button class="header__btn btn">book an appointment</button>
+            </div>
+            <div class="burger-wrap">
+              <button class="header__btn-menu-mob burger">
+                <span class="burger__first-line"></span>
+                <span class="burger__second-line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- //MAIN// -->
+      <main class="page">
+        <div class="page__main-block main-block">
+          <div class="main-block__container container">
+            <div class="main-block__body">
+              <div class="main-block__title-block about-main__title">
+                <h1 class="title-block__title first-title">about</h1>
+
+                <h1 class="title-block__title">better age</h1>
+              </div>
+              <button class="btn btn-mobile">book an appointment</button>
+            </div>
+          </div>
+          <div class="main-block__image _ibg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/about/about-hero-1765.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/about/about-hero-1200.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/about/about-hero-768.jpg" />
+              <source
+                media="(min-width: 320px)"
+                srcset="./images/about/about-hero-480.jpg 1x, ./images/about/about-hero-960.jpg 2x"
+              />
+              <img src="./images/about/about-hero-480.jpg" alt="" />
+            </picture>
+          </div>
+        </div>
+
+        <section class="section__philosophy philosophy">
+          <div class="philosophy__body">
+            <div class="philosophy__top top-philosophy">
+              <div class="top-philosophy__container container">
+                <div class="top-philosophy__title-block">
+                  <h2 class="top-philosophy__title">We believe in your skin</h2>
+
+                  <p class="top-philosophy__subtitle">
+                    Consistently great skin needs consistently great care. We listen to what you
+                    want to improve and tailor our monthly treatments to fit your unique needs
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="philosophy__bottom bottom-philosophy">
+              <div class="bottom-philosophy__container container">
+                <div class="bottom-philosophy__body">
+                  <div class="bottom-philosophy__left left-philosophy">
+                    <div class="left-philosophy__img">
+                      <img src="./images/about/philosophy-1.jpg" alt="" />
+                    </div>
+                    <div class="left-philosophy__content">
+                      <h3 class="left-philosophy__header">our philosophy</h3>
+                      <p class="left-philosophy__text top-philosophy__subtitle">
+                        Наша команда – це спеціалістки-ентузіастки, які знають, що науково доказові
+                        методи допомагають досягати реальних результатів. Ми використовуємо тільки
+                        неінвазивні технології, які безболісно та фізіологічно вирішують цілий
+                        спектр задач – від акне до хроностаріння шкіри.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bottom-philosophy__right right-philosophy">
+                    <div class="right-philosophy__img-absolute">
+                      <img src="./images/about/philosophy-2.jpg" alt="" />
+                    </div>
+                    <div class="right-philosophy__img">
+                      <img src="./images/about/philosophy-3.jpg" alt="" />
+                    </div>
+
+                    <div class="right-philosophy__content">
+                      <p class="left-philosophy__text top-philosophy__subtitle">
+                        Ми любимо свою роботу і кожного дня впевнюємося, що здоров’я – це ключ до
+                        краси, профілактика – найкраще лікування, а турбота в поєднанні з наукою
+                        здатна на диво.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <!-- FOOTER-TOP -->
+
+        <div class="footer__top top-footer">
+          <div class="top-footer__container container">
+            <div class="top-footer__body">
+              <!-- FOOTER-ABOUT -->
+
+              <div class="top-footer__about">
+                <a href="./index.html" class="top-footer__logo header__logo-link"
+                  ><svg class="icon-logo icon-logo__footer">
+                    <use xlink:href="./images/better-age-svg-sprite.svg#icon-logo"></use></svg
+                ></a>
+                <p class="top-footer__descr">
+                  BETTER AGE is an advanced skin clinic and retailer of professional skin care
+                  products, located in Praha. We deliver results-focused, relaxing treatments in a
+                  clean, luxurious, welcoming environment.
+                </p>
+              </div>
+
+              <!-- FOOTER-CONTACT -->
+
+              <div class="top-footer__contact contact-footer">
+                <h2 class="contact-footer__header">CONTACT / LOCATION</h2>
+
+                <ul class="contact-footer__list">
+                  <li class="contact-footer__item">
+                    <a href="tel:420778038859" class="contact-footer__link"
+                      ><svg class="contact-footer__icon icon-mob">
+                        <use xlink:href="./images/better-age-svg-sprite.svg#icon-phone-mob"></use>
+                      </svg>
+                      +420 778 038 859</a
+                    >
+                    <p class="contact-footer__link">
+                      <svg class="contact-footer__icon icon-clock">
+                        <use xlink:href="./images/better-age-svg-sprite.svg#icon-clock"></use></svg
+                      >10:00 to 20:00 every day
+                    </p>
+                  </li>
+                  <li class="contact-footer__item">
+                    <a href="" class="contact-footer__link"
+                      ><svg class="contact-footer__icon icon-location">
+                        <use
+                          xlink:href="./images/better-age-svg-sprite.svg#icon-location-pin"
+                        ></use>
+                      </svg>
+                      Mikovcova 476/10, Praha</a
+                    >
+                    <a href="mailto:hlopova.cz@gmail.com " class="contact-footer__link"
+                      ><svg class="contact-footer__icon icon-mail">
+                        <use
+                          xlink:href="./images/better-age-svg-sprite.svg#icon-basic-mail"
+                        ></use></svg
+                      >hlopova.cz@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER-BOTTOM -->
+
+        <div class="footer__bottom bottom-footer">
+          <div class="bottom-footer__container container">
+            <div class="bottom-footer__body">
+              <!-- FOOTER-SOCIAL -->
+
+              <div class="bottom-footer__social footer-social">
+                <ul class="footer-social__list">
+                  <li class="footer-social__item">
+                    <a href="" class="footer-social__link"
+                      ><svg class="footer-social__icon">
+                        <use
+                          xlink:href="./images/better-age-svg-sprite.svg#icon-facebook"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="footer-social__item">
+                    <a href="" class="footer-social__link"
+                      ><svg class="footer-social__icon">
+                        <use
+                          xlink:href="./images/better-age-svg-sprite.svg#icon-social-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+                <p class="footer-social__copyright">ⓒ 2022 BETTER AGE</p>
+              </div>
+
+              <!-- FOOTER-NAV -->
+
+              <div class="bottom-footer__nav nav-footer">
+                <ul class="nav-footer__list">
+                  <li class="nav-footer__item">
+                    <a href="./treatments.html" class="nav-footer__link">treatments</a>
+                  </li>
+                  <li class="nav-footer__item">
+                    <a href="./about.html" class="nav-footer__link">About</a>
+                  </li>
+                  <li class="nav-footer__item"><a href="" class="nav-footer__link">FAQ</a></li>
+                  <li class="nav-footer__item">
+                    <a href="" class="nav-footer__link">Contacts</a>
+                  </li>
+                  <li class="nav-footer__item">
+                    <a href="" class="nav-footer__link">privacy policy</a>
+                  </li>
+                  <li class="nav-footer__item">
+                    <a href="" class="nav-footer__link">Cookie Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/scroll-header.js"></script>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/siema.min.js"></script>
+  </body>
+</html>

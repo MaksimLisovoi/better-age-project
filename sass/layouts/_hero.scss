@@ -9,22 +9,21 @@
   position: relative;
   z-index: 2;
   padding-bottom: 60px;
-  padding-top: 395px;
+  padding-top: 450px;
   @include for-size(desktop) {
     padding-bottom: 40px;
     padding-top: 560px;
   }
 }
-.main-block__container {
-}
-.container {
-}
+
 .main-block__title-block {
   display: flex;
   flex-direction: column;
+
   margin-bottom: 30px;
 
   @include for-size(desktop) {
+    margin-bottom: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -55,6 +54,12 @@
 .title-block__title.first-title {
   @include for-size(desktop) {
     max-width: 521px;
+  }
+
+  &__treatments {
+    @include for-size(desktop) {
+      padding-bottom: 100px;
+    }
   }
 }
 .main-block__image {
