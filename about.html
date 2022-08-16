@@ -122,14 +122,38 @@
                   </div>
                   <div class="bottom-philosophy__right right-philosophy">
                     <div class="right-philosophy__img-absolute">
-                      <img src="./images/about/philosophy-2.jpg" alt="" />
+                      <picture>
+                        <source
+                          media="(min-width: 1200px)"
+                          srcset="./images/about/philosophy-2.jpg"
+                        />
+
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="./images/about/philosophy-2-tablet.jpg"
+                        />
+
+                        <img src="./images/about/philosophy-2.jpg" alt="" />
+                      </picture>
                     </div>
                     <div class="right-philosophy__img">
-                      <img src="./images/about/philosophy-3.jpg" alt="" />
+                      <picture>
+                        <source
+                          media="(min-width: 1200px)"
+                          srcset="./images/about/philosophy-3.jpg"
+                        />
+
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="./images/about/philosophy-3-tablet.jpg"
+                        />
+
+                        <img src="./images/about/philosophy-3.jpg" alt="" />
+                      </picture>
                     </div>
 
                     <div class="right-philosophy__content">
-                      <p class="left-philosophy__text top-philosophy__subtitle">
+                      <p class="right-philosophy__text top-philosophy__subtitle">
                         Ми любимо свою роботу і кожного дня впевнюємося, що здоров’я – це ключ до
                         краси, профілактика – найкраще лікування, а турбота в поєднанні з наукою
                         здатна на диво.
@@ -137,6 +161,64 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section__founder founder">
+          <div class="founder__container container">
+            <div class="founder__body">
+              <div class="founder__content">
+                <div class="founder__header-block">
+                  <h2 class="founder__title">Viktorie Komaška</h2>
+                  <h3 class="founder__subtitle">FOUNDER & CEO</h3>
+                </div>
+
+                <p class="founder__text">
+                  Our singular mission is to make people feel confident in their own skin. We are
+                  committed to creating a listening environment that drives results for each and
+                  every one of you. So let's face your skin, together.treatments to fit your unique
+                  needs.
+                </p>
+
+                <div class="founder__social social-founder">
+                  <h3 class="social-founder__header">I LOVE FEEDBACK EMAIL ME AT</h3>
+
+                  <ul class="social-founder__list">
+                    <li class="social-founder__item">
+                      <a class="social-founder__link" href="">
+                        <!-- you have to change this icon!!! -->
+                        <svg class="social-founder__icon social-founder__icon--mail">
+                          <use
+                            xlink:href="./images/better-age-svg-sprite.svg#icon-basic-mail"
+                          ></use>
+                        </svg>
+                        <!-- you have to change this icon!!! -->
+                        <span class="social-founder__text">founder@.com</span>
+                      </a>
+                    </li>
+                    <li class="social-founder__item">
+                      <a class="social-founder__link" href="">
+                        <svg class="social-founder__icon social-founder__icon--insta">
+                          <use
+                            xlink:href="./images/better-age-svg-sprite.svg#icon-social-instagram"
+                          ></use>
+                        </svg>
+                        <span class="social-founder__text">@founder</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="founder__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/about/fouder-desktop.jpg" />
+                  <source media="(min-width: 768px)" srcset="./images/about/fouder-tablet.jpg" />
+
+                  <img src="./images/about/fouder-desktop.jpg" alt="" />
+                </picture>
               </div>
             </div>
           </div>

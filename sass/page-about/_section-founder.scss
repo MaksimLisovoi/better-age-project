@@ -1,0 +1,256 @@
+.founder {
+  // .founder__container
+  background-color: $light-blue-bg-color;
+  color: $beige-text-color;
+
+  &__container {
+  }
+
+  // .founder__body
+
+  &__body {
+    display: flex;
+    position: relative;
+
+    @include for-size(tablet-landscape) {
+      padding: 40px 0 40px 0;
+    }
+    @include for-size(desktop) {
+      padding: 100px 0 100px 0;
+    }
+  }
+
+  // .founder__content
+
+  &__content {
+    @include for-size(tablet-landscape) {
+      flex: 0 1 40.4%;
+    }
+    @include for-size(desktop) {
+      flex: 0 1 48.2%;
+      padding-left: 96px;
+    }
+  }
+
+  // .founder__header-block
+
+  &__header-block {
+    margin-bottom: 20px;
+
+    @include for-size(tablet-landscape) {
+      margin-bottom: 30px;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 50px;
+    }
+  }
+
+  // .founder__title
+
+  &__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 14px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 30px;
+    }
+  }
+
+  // .founder__subtitle
+
+  &__subtitle {
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 1.2;
+
+    font-size: 14px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 12px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 16px;
+    }
+  }
+
+  // .founder__text
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 1.6;
+
+    font-size: 12px;
+
+    margin-bottom: 40px;
+
+    @include for-size(tablet-landscape) {
+      margin-bottom: 30px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 16px;
+      margin-bottom: 100px;
+    }
+  }
+  &__text::before {
+    content: '';
+    display: block;
+    background-image: url(../images/icons/icon-quotes.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 15px;
+    height: 13px;
+    margin-bottom: 10px;
+
+    @include for-size(tablet-landscape) {
+      width: 14px;
+      height: 12px;
+    }
+
+    @include for-size(desktop) {
+      width: 20px;
+      height: 17px;
+
+      margin-bottom: 12px;
+    }
+  }
+
+  // .founder__img
+
+  &__img {
+    flex: 0 1 41%;
+    position: absolute;
+    top: -36px;
+    right: 0;
+
+    @include for-size(tablet-landscape) {
+      padding-right: 61px;
+    }
+
+    @include for-size(desktop) {
+      padding-right: 0;
+    }
+  }
+}
+
+.social-founder {
+  // .social-founder__header
+
+  &__header {
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 1.2;
+
+    font-size: 14px;
+    margin-bottom: 14px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  }
+
+  // .social-founder__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    @include for-size(tablet-landscape) {
+      flex-direction: row;
+    }
+
+    @include for-size(desktop) {
+      flex-direction: column;
+    }
+  }
+
+  // .social-founder__item
+
+  &__item {
+    @include for-size(tablet-landscape) {
+    }
+
+    @include for-size(desktop) {
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin: 0 0 14px 0;
+    @include for-size(tablet-landscape) {
+      margin: 0 30px 0 0;
+    }
+
+    @include for-size(desktop) {
+      margin: 0 0 14px 0;
+    }
+  }
+
+  // .social-founder__link
+
+  &__link {
+    color: $beige-text-color;
+    display: flex;
+  }
+
+  // .social-founder__icon
+
+  &__icon {
+    margin-right: 20px;
+  }
+
+  &__icon--insta {
+    @include for-size(tablet-landscape) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @include for-size(desktop) {
+      width: 30px;
+      height: 27px;
+    }
+  }
+  &__icon--mail {
+    @include for-size(tablet-landscape) {
+      width: 20px;
+      height: 14px;
+    }
+
+    @include for-size(desktop) {
+      width: 30px;
+      height: 21px;
+    }
+  }
+
+  // .social-founder__text
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 1.6;
+    text-decoration-line: underline;
+
+    font-size: 14px;
+
+    @include for-size(desktop) {
+      font-size: 18px;
+    }
+  }
+}

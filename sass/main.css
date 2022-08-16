@@ -2653,6 +2653,7 @@ img {
 @media (min-width: 768px) {
   .philosophy__top {
     padding: 60px 0 97px 0;
+    margin-bottom: -57px;
   }
 }
 @media (min-width: 1200px) {
@@ -2704,7 +2705,7 @@ img {
   font-size: 12px;
   line-height: 1.6;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .top-philosophy__subtitle {
     font-size: 16px;
   }
@@ -2713,6 +2714,11 @@ img {
 .bottom-philosophy__body {
   display: flex;
 }
+@media (min-width: 768px) {
+  .bottom-philosophy__body {
+    padding: 57px 0 97px 0;
+  }
+}
 @media (min-width: 1200px) {
   .bottom-philosophy__body {
     padding: 126px 0 180px 0;
@@ -2720,7 +2726,7 @@ img {
 }
 @media (min-width: 768px) {
   .bottom-philosophy__left {
-    flex: 0 1 37.8%;
+    flex: 0 1 40.4%;
   }
 }
 @media (min-width: 1200px) {
@@ -2730,14 +2736,12 @@ img {
 }
 @media (min-width: 768px) {
   .bottom-philosophy__right {
-    flex: 0 1 63.2%;
-    padding-left: 77px;
+    flex: 0 1 59.6%;
   }
 }
 @media (min-width: 1200px) {
   .bottom-philosophy__right {
     flex: 0 1 51.8%;
-    padding-left: 120px;
   }
 }
 
@@ -2754,6 +2758,10 @@ img {
   .left-philosophy__img {
     margin-bottom: 90px;
   }
+}
+.left-philosophy__img img {
+  width: 100%;
+  height: 100%;
 }
 @media (min-width: 1200px) {
   .left-philosophy__content {
@@ -2781,23 +2789,269 @@ img {
 }
 @media (min-width: 768px) {
   .right-philosophy__img-absolute {
-    padding-left: 61px;
+    position: relative;
+    top: -57px;
+    left: 138px;
   }
 }
 @media (min-width: 1200px) {
   .right-philosophy__img-absolute {
-    padding-left: 96px;
     margin-bottom: -46px;
     position: relative;
     top: -126px;
-    left: 0;
+    left: 216px;
   }
 }
 .right-philosophy__img {
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .right-philosophy__img {
+    transform: translateX(77px);
+  }
+}
 @media (min-width: 1200px) {
   .right-philosophy__img {
     margin-bottom: 51px;
+    transform: translateX(120px);
+  }
+}
+.right-philosophy__img img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .right-philosophy__text {
+    padding-left: 77px;
+  }
+}
+@media (min-width: 1200px) {
+  .right-philosophy__text {
+    padding-left: 120px;
+  }
+}
+
+.founder {
+  background-color: #8abde2;
+  color: #f5f0e2;
+}
+.founder__body {
+  display: flex;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .founder__body {
+    padding: 40px 0 40px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .founder__body {
+    padding: 100px 0 100px 0;
+  }
+}
+@media (min-width: 768px) {
+  .founder__content {
+    flex: 0 1 40.4%;
+  }
+}
+@media (min-width: 1200px) {
+  .founder__content {
+    flex: 0 1 48.2%;
+    padding-left: 96px;
+  }
+}
+.founder__header-block {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .founder__header-block {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .founder__header-block {
+    margin-bottom: 50px;
+  }
+}
+.founder__title {
+  font-family: "Oswald";
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .founder__title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .founder__title {
+    font-size: 30px;
+  }
+}
+.founder__subtitle {
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .founder__subtitle {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .founder__subtitle {
+    font-size: 16px;
+  }
+}
+.founder__text {
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .founder__text {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .founder__text {
+    font-size: 16px;
+    margin-bottom: 100px;
+  }
+}
+.founder__text::before {
+  content: "";
+  display: block;
+  background-image: url(../images/icons/icon-quotes.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 13px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .founder__text::before {
+    width: 14px;
+    height: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .founder__text::before {
+    width: 20px;
+    height: 17px;
+    margin-bottom: 12px;
+  }
+}
+.founder__img {
+  flex: 0 1 41%;
+  position: absolute;
+  top: -36px;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .founder__img {
+    padding-right: 61px;
+  }
+}
+@media (min-width: 1200px) {
+  .founder__img {
+    padding-right: 0;
+  }
+}
+
+.social-founder__header {
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+@media (min-width: 768px) {
+  .social-founder__header {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .social-founder__header {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+.social-founder__list {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .social-founder__list {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .social-founder__list {
+    flex-direction: column;
+  }
+}
+.social-founder__item:not(:last-child) {
+  margin: 0 0 14px 0;
+}
+@media (min-width: 768px) {
+  .social-founder__item:not(:last-child) {
+    margin: 0 30px 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  .social-founder__item:not(:last-child) {
+    margin: 0 0 14px 0;
+  }
+}
+.social-founder__link {
+  color: #f5f0e2;
+  display: flex;
+}
+.social-founder__icon {
+  margin-right: 20px;
+}
+@media (min-width: 768px) {
+  .social-founder__icon--insta {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .social-founder__icon--insta {
+    width: 30px;
+    height: 27px;
+  }
+}
+@media (min-width: 768px) {
+  .social-founder__icon--mail {
+    width: 20px;
+    height: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .social-founder__icon--mail {
+    width: 30px;
+    height: 21px;
+  }
+}
+.social-founder__text {
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 1.6;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-size: 14px;
+}
+@media (min-width: 1200px) {
+  .social-founder__text {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=main.css.map */
