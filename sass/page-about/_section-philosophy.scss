@@ -96,9 +96,12 @@
 
   &__body {
     display: flex;
+    flex-direction: column;
+    padding: 0 0 139px 0;
 
     @include for-size(tablet-landscape) {
       padding: 57px 0 97px 0;
+      flex-direction: row;
     }
 
     @include for-size(desktop) {
@@ -137,9 +140,10 @@
     margin-bottom: 30px;
 
     width: 100%;
-
+    padding-right: 63px;
     @include for-size(tablet-landscape) {
       margin-bottom: 132px;
+      padding-right: 0;
     }
     @include for-size(desktop) {
       margin-bottom: 90px;
@@ -147,8 +151,14 @@
   }
 
   &__img img {
+    position: relative;
+    left: -18px;
     width: 100%;
     height: 100%;
+
+    @include for-size(tablet-landscape) {
+      left: 0;
+    }
   }
 
   // .left-philosophy__content
@@ -188,7 +198,9 @@
   // .right-philosophy__img-absolute
 
   &__img-absolute {
+    display: none;
     @include for-size(tablet-landscape) {
+      display: block;
       position: relative;
       top: -57px;
       left: 138px;
@@ -207,9 +219,13 @@
 
   &__img {
     margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 102px;
 
     @include for-size(tablet-landscape) {
       transform: translateX(77px);
+      padding-left: 0;
+      margin-top: 0;
     }
 
     @include for-size(desktop) {
@@ -219,8 +235,14 @@
   }
 
   &__img img {
+    position: relative;
+    right: -18px;
     width: 100%;
     height: 100%;
+
+    @include for-size(tablet-landscape) {
+      right: 0;
+    }
   }
 
   // .right-philosophy__content

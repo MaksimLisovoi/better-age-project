@@ -1,0 +1,150 @@
+.technologies {
+  background-color: $white-bg-color;
+  // .technologies__container
+
+  &__container {
+  }
+
+  // .technologies__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 0 40px 0;
+    @include for-size(tablet-landscape) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 60px 0 60px 0;
+    }
+
+    @include for-size(desktop) {
+      padding: 100px 0 100px 0;
+    }
+  }
+
+  // .technologies__img-block
+
+  &__img-block {
+    margin-bottom: 40px;
+    @include for-size(tablet-landscape) {
+      flex: 0 1 40.4%;
+      margin-bottom: 0;
+    }
+
+    @include for-size(desktop) {
+      flex: 0 1 41%;
+    }
+  }
+
+  // .technologies__content
+
+  &__content {
+    @include for-size(tablet-landscape) {
+      flex: 0 1 48.3%;
+    }
+
+    @include for-size(desktop) {
+      flex: 0 1 41%;
+    }
+  }
+
+  // .technologies__header
+
+  &__header {
+    font-family: 'Roboto';
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.35;
+    margin-bottom: 20px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 28px;
+      line-height: 1.17;
+      letter-spacing: 0.05em;
+      text-align: left;
+
+      margin-bottom: 40px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 48px;
+      line-height: 1.166;
+      letter-spacing: 0.05em;
+
+      margin-bottom: 60px;
+    }
+  }
+
+  // .technologies__img
+
+  &__img {
+  }
+
+  &__img img {
+    width: 100%;
+  }
+}
+
+.content-tech {
+  // .content-tech__list
+
+  &__list {
+  }
+
+  // .content-tech__item
+
+  &__item {
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 40px;
+
+    @include for-size(tablet-landscape) {
+      margin-bottom: 30px;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 60px;
+    }
+  }
+
+  // .content-tech__header
+
+  &__header {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 14px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+  }
+
+  // .content-tech__text
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 160%;
+
+    @include for-size(desktop) {
+      font-size: 16px;
+    }
+  }
+}

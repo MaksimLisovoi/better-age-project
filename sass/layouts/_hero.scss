@@ -44,12 +44,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
+  color: $beige-text-color;
+
   @include for-size(desktop) {
     font-size: 80px;
     line-height: 1.25;
   }
-
-  color: $secondary-text-color;
 }
 .title-block__title.first-title {
   @include for-size(desktop) {

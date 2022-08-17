@@ -48,7 +48,6 @@
     margin: 0 -8px;
 
     @include for-size(tablet-landscape) {
-      flex-direction: row;
       margin: 0 -12px;
     }
 
