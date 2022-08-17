@@ -1,0 +1,51 @@
+.find-us {
+  background-color: $dark-gray;
+  // .find-us__container
+
+  @media (max-width: 767px) {
+    .find-us__container {
+      padding: 0;
+    }
+  }
+
+  &__container {
+  }
+
+  // .find-us__body
+
+  &__body {
+    padding: 30px 0 0 0;
+    @include for-size(tablet-landscape) {
+      padding: 30px 62px 60px 62px;
+    }
+
+    @include for-size(desktop) {
+      padding: 63px 96px 120px 96px;
+    }
+  }
+
+  // .find-us__header
+
+  &__header {
+    margin-bottom: 20px;
+
+    @include for-size(tablet-landscape) {
+      margin-bottom: 40px;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 60px;
+    }
+  }
+
+  // .find-us__img
+
+  &__img {
+  }
+
+  &__img img {
+    width: 100%;
+  }
+}
+.container {
+}

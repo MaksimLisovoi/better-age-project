@@ -1,0 +1,130 @@
+.contacts {
+  // .contacts__container
+
+  &__container {
+  }
+
+  // .contacts__body
+
+  &__body {
+    padding: 120px 0 40px 0;
+
+    @include for-size(tablet-landscape) {
+      padding: 110px 123px 60px 123px;
+    }
+
+    @include for-size(desktop) {
+      padding: 200px 96px 100px 96px;
+    }
+  }
+
+  // .contacts__header
+
+  &__header {
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include for-size(tablet-landscape) {
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 30px;
+      margin-bottom: 70px;
+      text-align: left;
+    }
+  }
+
+  // .contacts__list
+}
+.container {
+}
+.list-contacts {
+  display: flex;
+  flex-direction: column;
+
+  @include for-size(tablet-landscape) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -20px;
+  }
+
+  @include for-size(desktop) {
+    margin: 0;
+  }
+
+  // .list-contacts__item
+
+  &__item {
+    @include for-size(tablet-landscape) {
+      flex: 0 1 50%;
+      padding: 20px;
+    }
+
+    @include for-size(desktop) {
+      flex: 0 1 25%;
+      padding: 0;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include for-size(tablet-landscape) {
+      margin: 0;
+    }
+  }
+
+  // .list-contacts__title
+
+  &__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+
+    font-size: 16px;
+    margin-bottom: 10px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 14px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .list-contacts__text-block
+
+  &__text-block {
+  }
+
+  // .list-contacts__text
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 150%;
+
+    font-size: 14px;
+
+    @include for-size(tablet-landscape) {
+      line-height: 140%;
+      font-weight: 400;
+    }
+
+    @include for-size(desktop) {
+      font-size: 18px;
+    }
+  }
+}
