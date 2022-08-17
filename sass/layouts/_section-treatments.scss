@@ -171,9 +171,6 @@
 .treatments__btn {
   display: block;
   position: inherit;
-  left: 0;
-  top: 0;
-  transform: rotate(0);
 
   margin: 50px auto 0 auto;
 
@@ -206,7 +203,7 @@
   width: 22px;
   height: 11px;
   margin: 0 0 0 4px;
-  background-image: url(../../images/icons/see-all-arrow.svg);
+  background-image: url(../images/icons/see-all-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
