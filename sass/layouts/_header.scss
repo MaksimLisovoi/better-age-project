@@ -53,7 +53,7 @@
   height: 35px;
   fill: $primary-text-color;
 
-  transition: fill 0.3s 0.3s;
+  transition: fill 0.3s 0.2s;
 
   @include for-size(tablet-landscape) {
     width: 85px;

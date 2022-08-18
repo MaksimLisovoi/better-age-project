@@ -82,6 +82,7 @@
   // .faq__title
 
   &__title {
+    cursor: pointer;
     font-family: 'Oswald';
     font-weight: 500;
     text-transform: uppercase;
@@ -100,6 +101,7 @@
   }
 
   &__arrow {
+    cursor: pointer;
     position: absolute;
     display: flex;
     justify-content: center;

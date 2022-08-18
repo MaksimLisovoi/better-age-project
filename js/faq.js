@@ -6,7 +6,13 @@ function onItemClick(e) {
   const parent = e.target.closest('.faq__item');
   const currentActiveItem = document.querySelector('.faq__item--is-active');
 
-  if (e.target.nodeName == 'H3' || e.target.nodeName == 'SPAN') {
+  console.log(e.target.nodeName);
+
+  if (e.target.nodeName === 'P') {
+    return;
+  }
+
+  if (parent) {
     parent.classList.toggle('faq__item--is-active');
   }
 

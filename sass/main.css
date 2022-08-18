@@ -164,7 +164,7 @@ img {
   width: 104px;
   height: 35px;
   fill: #1b6ab3;
-  transition: fill 0.3s 0.3s;
+  transition: fill 0.3s 0.2s;
 }
 @media (min-width: 768px) {
   .icon-logo {
@@ -3579,6 +3579,7 @@ img {
   }
 }
 .faq__title {
+  cursor: pointer;
   font-family: "Oswald";
   font-weight: 500;
   text-transform: uppercase;
@@ -3597,6 +3598,7 @@ img {
   }
 }
 .faq__arrow {
+  cursor: pointer;
   position: absolute;
   display: flex;
   justify-content: center;
