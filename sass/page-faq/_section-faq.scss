@@ -1,0 +1,174 @@
+.section {
+  // .section__faq
+
+  &__faq {
+  }
+}
+.faq {
+  // .faq__container
+
+  &__container {
+  }
+
+  // .faq__body
+
+  &__body {
+    padding: 120px 0 100px 0;
+
+    @include for-size(tablet-landscape) {
+      padding: 110px 0 100px 0;
+    }
+
+    @include for-size(desktop) {
+      padding: 200px 96px 140px 96px;
+    }
+  }
+
+  // .faq__header
+
+  &__header {
+    font-family: 'Roboto';
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 28px;
+    line-height: 1.35;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 28px;
+      letter-spacing: 0.05em;
+      line-height: 1.17;
+    }
+
+    @include for-size(desktop) {
+      font-size: 48px;
+      line-height: 1.166;
+      margin-bottom: 100px;
+    }
+  }
+
+  // .faq__list
+
+  &__list {
+  }
+
+  // .faq__item
+
+  &__item {
+    padding: 20px 30px 20px 16px;
+    background-color: $dark-gray;
+    position: relative;
+
+    @include for-size(tablet-landscape) {
+      padding: 22px 61px 20px 61px;
+    }
+
+    @include for-size(desktop) {
+      padding: 22px 30px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include for-size(desktop) {
+      margin-bottom: 30px;
+    }
+  }
+
+  // .faq__title
+
+  &__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    text-transform: uppercase;
+
+    font-size: 12px;
+    line-height: 160%;
+
+    @include for-size(tablet-landscape) {
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    @include for-size(desktop) {
+      font-size: 20px;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-out;
+
+    top: 14px;
+    right: 0px;
+
+    width: 30px;
+    height: 30px;
+
+    @include for-size(tablet-landscape) {
+      top: 16px;
+      right: 14px;
+    }
+
+    @include for-size(desktop) {
+      top: 20px;
+      right: 30px;
+    }
+  }
+
+  &__item--is-active &__arrow {
+    transform: rotate(90deg);
+  }
+
+  &__icon {
+    width: 7px;
+    height: 12px;
+
+    @include for-size(tablet-landscape) {
+      width: 9px;
+      height: 15px;
+    }
+
+    @include for-size(desktop) {
+      width: 10px;
+      height: 17px;
+    }
+  }
+
+  // .faq__text
+
+  &__text-block {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    transition: margin 0.2s ease-out;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 160%;
+
+    @include for-size(desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__item--is-active &__text-block {
+    max-height: 100%;
+    margin-top: 30px;
+
+    @include for-size(desktop) {
+      margin-top: 38px;
+    }
+  }
+
+  &__text {
+  }
+}

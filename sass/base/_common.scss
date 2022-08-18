@@ -29,6 +29,7 @@ figure {
   margin: 0;
   padding: 0;
 }
+html,
 body {
   height: 100%;
   line-height: 1.6;
@@ -60,6 +61,8 @@ img {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 ._ibg {
