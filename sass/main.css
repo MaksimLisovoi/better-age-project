@@ -461,6 +461,89 @@ img {
   }
 }
 
+.main-block__body .swiper-pagination {
+  top: 52%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 20px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: #1b6ab3;
+  border: 2px solid #1b6ab3;
+  border-radius: 50%;
+  opacity: 1;
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+}
+@media (min-width: 1200px) {
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+#swiper-pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 20px;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border: 2px solid #1b6ab3;
+  background: none;
+  width: 12px;
+  height: 12px;
+}
+@media (min-width: 1200px) {
+  .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.swiper-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.swiper-pagination-numbers {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  border-bottom: 2px solid #1b6ab3;
+}
+@media (min-width: 1200px) {
+  .swiper-pagination-numbers {
+    width: 134px;
+    font-size: 16px;
+    line-height: 118%;
+  }
+}
+
+.swiper-pagination-numbers span:first-child {
+  padding-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  .swiper-pagination-numbers span:first-child {
+    padding-bottom: 6px;
+  }
+}
+
+.swiper-pagination-numbers span:last-child {
+  transform: translateY(35px);
+}
+
 @media screen and (max-width: 767px) {
   .treatments__container {
     padding: 0;
@@ -1511,6 +1594,12 @@ img {
     font-size: 14px;
   }
 }
+.contact-footer__link:hover {
+  text-decoration: underline;
+}
+a .contact-footer:hover {
+  text-decoration: underline;
+}
 .contact-footer__icon {
   height: 16px;
   margin-right: 5px;
@@ -1677,6 +1766,9 @@ img {
   .nav-footer__link {
     font-size: 14px;
   }
+}
+.nav-footer__link:hover {
+  text-decoration: underline;
 }
 
 .page-treatments__list {

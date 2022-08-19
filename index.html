@@ -19,6 +19,8 @@
     />
     <link href="https://fonts.googleapis.com/css?family=Inter:regular,500" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <title>Better age</title>
   </head>
   <body>
@@ -75,16 +77,48 @@
                 <h1 class="title-block__title">FOR ALL</h1>
               </div>
               <button class="btn btn-mobile">book an appointment</button>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination" id="swiper-pagination"></div>
+              <div class="swiper-pagination-numbers">
+                <span>01</span>
+                <span>02</span>
+              </div>
             </div>
           </div>
-          <div class="main-block__image _ibg">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./images/imgs/hero-main-1900.jpg" />
-              <source media="(min-width: 768px)" srcset="./images/imgs/hero-main-1200.jpg" />
-              <source media="(min-width: 480px)" srcset="./images/imgs/hero-main-768.jpg" />
-              <source media="(min-width: 320px)" srcset="./images/imgs/hero-main-480-2.jpg" />
-              <img src="./images/imgs/hero-main-480.jpg" alt="" />
-            </picture>
+
+          <!-- Slider main container -->
+          <div class="swiper-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+              <div class="main-block__image _ibg swiper-slide">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/imgs/hero-main-1900.jpg" />
+                  <source media="(min-width: 768px)" srcset="./images/imgs/hero-main-1200.jpg" />
+                  <source media="(min-width: 480px)" srcset="./images/imgs/hero-main-768.jpg" />
+                  <source media="(min-width: 320px)" srcset="./images/imgs/hero-main-480-2.jpg" />
+                  <img src="./images/imgs/hero-main-480.jpg" alt="" />
+                </picture>
+
+                <!-- <img src="./images/imgs/hero-main-1900.jpg" alt="" /> -->
+              </div>
+
+              <div class="main-block__image _ibg swiper-slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/imgs-treatments/treatments-hero-1673.jpg"
+                  />
+                  <source media="(min-width: 768px)" srcset="./images/imgs/hero-main-1200.jpg" />
+                  <source media="(min-width: 480px)" srcset="./images/imgs/hero-main-768.jpg" />
+                  <source media="(min-width: 320px)" srcset="./images/imgs/hero-main-480-2.jpg" />
+                  <img src="./images/imgs/hero-main-480.jpg" alt="" />
+                </picture>
+                <!-- <img src="./images/imgs-treatments/treatments-hero-1673.jpg" alt="" /> -->
+              </div>
+            </div>
           </div>
         </div>
 
@@ -453,7 +487,9 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/scroll-header.js"></script>
     <script src="./js/burger-menu.js"></script>
+    <script src="./js/swiper-slider.js"></script>
   </body>
 </html>

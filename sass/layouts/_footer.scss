@@ -179,6 +179,14 @@
     @include for-size(desktop) {
       font-size: 14px;
     }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  a &:hover {
+    text-decoration: underline;
   }
 
   &__icon {
@@ -371,6 +379,10 @@
 
     @include for-size(desktop) {
       font-size: 14px;
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
