@@ -79,7 +79,8 @@
               <button class="btn btn-mobile">book an appointment</button>
 
               <!-- If we need pagination -->
-              <div class="swiper-pagination" id="swiper-pagination"></div>
+
+              <div class="swiper-pagination pagination-base" id="swiper-pagination"></div>
               <div class="swiper-pagination-numbers">
                 <span>01</span>
                 <span>02</span>
@@ -87,38 +88,16 @@
             </div>
           </div>
 
-          <!-- Slider main container -->
-          <div class="swiper-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
+          <div class="main-block__image main-block__mob-img _ibg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/imgs/hero-main-1900.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/imgs/hero-main-1200.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/imgs/hero-main-768.jpg" />
+              <source media="(min-width: 320px)" srcset="./images/imgs/hero-main-480-2.jpg" />
+              <img src="./images/imgs/hero-main-480.jpg" alt="" />
+            </picture>
 
-              <div class="main-block__image _ibg swiper-slide">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./images/imgs/hero-main-1900.jpg" />
-                  <source media="(min-width: 768px)" srcset="./images/imgs/hero-main-1200.jpg" />
-                  <source media="(min-width: 480px)" srcset="./images/imgs/hero-main-768.jpg" />
-                  <source media="(min-width: 320px)" srcset="./images/imgs/hero-main-480-2.jpg" />
-                  <img src="./images/imgs/hero-main-480.jpg" alt="" />
-                </picture>
-
-                <!-- <img src="./images/imgs/hero-main-1900.jpg" alt="" /> -->
-              </div>
-
-              <div class="main-block__image _ibg swiper-slide">
-                <picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="./images/imgs-treatments/treatments-hero-1673.jpg"
-                  />
-                  <source media="(min-width: 768px)" srcset="./images/imgs/hero-main-1200.jpg" />
-                  <source media="(min-width: 480px)" srcset="./images/imgs/hero-main-768.jpg" />
-                  <source media="(min-width: 320px)" srcset="./images/imgs/hero-main-480-2.jpg" />
-                  <img src="./images/imgs/hero-main-480.jpg" alt="" />
-                </picture>
-                <!-- <img src="./images/imgs-treatments/treatments-hero-1673.jpg" alt="" /> -->
-              </div>
-            </div>
+            <!-- <img src="./images/imgs/hero-main-1900.jpg" alt="" /> -->
           </div>
         </div>
 
@@ -270,22 +249,70 @@
           <div class="clents__containers container">
             <div class="clents__body">
               <div class="clients__block">
-                <h2 class="clients__header">Our Clients Before & Afters</h2>
+                <div class="clients__slider">
+                  <h2 class="clients__header">Our Clients Before & Afters</h2>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="clients__img">
+                        <img
+                          loading="lazy"
+                          src="./images/imgs/before-after-mob-desktop.jpg"
+                          alt=""
+                        />
+                      </div>
 
-                <div class="clients__img">
-                  <img loading="lazy" src="./images/imgs/before-after-mob-desktop.jpg" alt="" />
+                      <div class="clients__title-block title-block">
+                        <h3 class="title-block__header">HydraFacial beauty treatment</h3>
+                        <p class="title__block-descr">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                          commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="clients__img">
+                        <img
+                          loading="lazy"
+                          src="./images/imgs/before-after-mob-desktop.jpg"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="clients__title-block title-block">
+                        <h3 class="title-block__header">HydraFacial beauty treatment</h3>
+                        <p class="title__block-descr">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                          commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="clients__title-block title-block">
-                  <h3 class="title-block__header">HydraFacial beauty treatment</h3>
-                  <p class="title__block-descr">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                <div class="clients__controls clients-controls">
+                  <button class="clients-controls__btn clients-controls__btn--left">
+                    <svg class="clients-controls__icon">
+                      <use
+                        xlink:href="./images/better-age-svg-sprite.svg#icon-before-after-arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+                  <div
+                    class="clients-controls__pagination pagination-base"
+                    id="swiper-pagination"
+                  ></div>
+                  <button class="clients-controls__btn clients-controls__btn--right">
+                    <svg class="clients-controls__icon">
+                      <use
+                        xlink:href="./images/better-age-svg-sprite.svg#icon-before-after-arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
                 </div>
               </div>
-
               <div class="clients__sidebar">
                 <img loading="lazy" src="./images/imgs/before-after-sidebar-small.jpg" alt="" />
               </div>
@@ -490,6 +517,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/scroll-header.js"></script>
     <script src="./js/burger-menu.js"></script>
-    <script src="./js/swiper-slider.js"></script>
+    <script src="./js/main-slider.js"></script>
+    <script src="./js/clients-slider.js"></script>
   </body>
 </html>

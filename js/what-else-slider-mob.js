@@ -1,16 +1,22 @@
-const whatElseSlider = new Siema({
-  selector: '.siema-slider',
-  duration: 200,
-  easing: 'ease-out',
-  perPage: {
-    768: 3,
-  },
-  startIndex: 0,
-  draggable: true,
-  multipleDrag: true,
-  threshold: 20,
+const whatElseSlider = new Swiper('.what-else__slider', {
+  direction: 'horizontal',
   loop: false,
-  rtl: false,
-  onInit: () => {},
-  onChange: () => {},
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+  },
+
+  // autoHeight: true,
+
+  initialSlide: 1,
 });

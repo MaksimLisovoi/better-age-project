@@ -1,13 +1,10 @@
-.section__clients {
-}
-.clients {
-}
 .clents__body {
   display: flex;
 }
 .clients__block {
   padding: 40px 0;
   text-align: center;
+  overflow: hidden;
 
   @include for-size(tablet-landscape) {
     padding: 40px 60px;
@@ -110,4 +107,42 @@
   left: 0;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.clients-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 20;
+  bottom: 40%;
+
+  @include for-size(tablet-landscape) {
+    bottom: 176px;
+  }
+
+  @include for-size(desktop) {
+    bottom: 226px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .clients-controls__btn
+
+  &__btn {
+  }
+
+  // .clients-controls__icon
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    @include for-size(tablet-landscape) {
+      width: 70px;
+    }
+  }
 }

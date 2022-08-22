@@ -45,10 +45,10 @@
   &__list {
     display: flex;
     flex-direction: column;
-    margin: 0 -8px;
 
     @include for-size(tablet-landscape) {
       margin: 0 -12px;
+      overflow: hidden;
     }
 
     @include for-size(desktop) {
@@ -58,7 +58,6 @@
 }
 
 .w-e-list {
-  cursor: default;
   // .w-e-list__item
 
   &__item {
@@ -92,7 +91,7 @@
     color: $beige-text-color;
     background-color: $blue-bg-color;
 
-    // flex: 1 1 auto;
+    flex: 1 1 auto;
 
     display: flex;
     flex-direction: column;
@@ -177,4 +176,20 @@
       line-height: 1.3;
     }
   }
+}
+
+#swiper-scrollbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $light-blue-bg-color;
+  height: 2px;
+  margin-top: 50px;
+}
+#swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: $blue-bg-color;
+  height: 8px;
+}
+.w-e-list__item.swiper-slide {
+  height: auto;
 }
