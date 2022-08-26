@@ -4,9 +4,9 @@ let prevScrollY = 0;
 let minScrollY = 100;
 
 window.addEventListener('scroll', function (e) {
-  // console.log(window.scrollY);
+  console.log(window.scrollY);
 
-  if (window.scrollY === 0) {
+  if (window.scrollY <= 50) {
     $header.classList.add('header--transparent-bg');
   } else {
     $header.classList.remove('header--transparent-bg');
