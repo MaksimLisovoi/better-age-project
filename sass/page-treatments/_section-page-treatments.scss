@@ -34,6 +34,7 @@
 
     @include for-size(desktop) {
       padding-top: 290px;
+      height: 523px;
     }
   }
 
@@ -125,5 +126,51 @@
 @media screen and (max-width: 767px) {
   .page-treatments__item--main {
     padding-top: 0;
+  }
+}
+
+.treatment__item {
+  @include for-size(desktop) {
+    &:hover .page-treatments__descr-block,
+    &:focus .page-treatments__descr-block {
+      flex: 0 1 320px;
+
+      height: 320px;
+    }
+  }
+}
+.treatment__item {
+  @include for-size(desktop) {
+    &:hover .page-treatments__block,
+    &:focus .page-treatments__block {
+      padding-top: 203px;
+    }
+  }
+}
+
+.treatment__item {
+  @include for-size(desktop) {
+    &:hover .page-treatments__icon,
+    &:focus .page-treatments__icon {
+      width: 14px;
+      height: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.treatment__item {
+  @include for-size(desktop) {
+    &:hover .page-treatments__title,
+    &:focus .page-treatments__title {
+      font-size: 26px;
+    }
+  }
+}
+.treatment__item {
+  @include for-size(desktop) {
+    &:hover .page-treatments__description,
+    &:focus .page-treatments__description {
+      font-size: 18px;
+    }
   }
 }

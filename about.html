@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css?family=Inter:regular,500" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <title>Better age</title>
   </head>
@@ -306,32 +307,53 @@
           </div>
         </section>
 
-        <section class="section__what-else what-else">
+        <section class="section__what-else what-else section__gallery">
           <div class="what-else__container container">
-            <div class="what-else__body">
-              <h2 class="what-else__header">чим доповнити процедуру</h2>
+            <div class="what-else__body gallery__body">
+              <h2 class="what-else__header">Batter Age Gallery</h2>
               <ul class="what-else__list w-e-list">
-                <li class="w-e-list__item">
-                  <div class="w-e-list__img">
-                    <img loading="lazy" src="./images/about/gallery/gallery-desk-1.jpg" alt="" />
+                <div class="about__slider what-else__slider">
+                  <div class="swiper-wrapper">
+                    <li class="w-e-list__item swiper-slide">
+                      <div class="w-e-list__img">
+                        <img
+                          loading="lazy"
+                          src="./images/about/gallery/gallery-desk-1.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="w-e-list__item swiper-slide">
+                      <div class="w-e-list__img">
+                        <img
+                          loading="lazy"
+                          src="./images/about/gallery/gallery-desk-2.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="w-e-list__item swiper-slide">
+                      <div class="w-e-list__img">
+                        <img
+                          loading="lazy"
+                          src="./images/about/gallery/gallery-desk-3.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="w-e-list__item swiper-slide">
+                      <div class="w-e-list__img">
+                        <img
+                          loading="lazy"
+                          src="./images/about/gallery/gallery-desk-1.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </li>
                   </div>
-                </li>
-                <li class="w-e-list__item">
-                  <div class="w-e-list__img">
-                    <img loading="lazy" src="./images/about/gallery/gallery-desk-2.jpg" alt="" />
-                  </div>
-                </li>
-                <li class="w-e-list__item">
-                  <div class="w-e-list__img">
-                    <img loading="lazy" src="./images/about/gallery/gallery-desk-3.jpg" alt="" />
-                  </div>
-                </li>
-                <li class="w-e-list__item">
-                  <div class="w-e-list__img">
-                    <img loading="lazy" src="./images/about/gallery/gallery-desk-1.jpg" alt="" />
-                  </div>
-                </li>
+                </div>
               </ul>
+              <div class="swiper-scrollbar" id="gallery-scrollbar"></div>
             </div>
           </div>
         </section>
@@ -459,7 +481,7 @@
     </div>
     <script src="./js/scroll-header.js"></script>
     <script src="./js/burger-menu.js"></script>
-    <script src="./js/siema.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/what-else-slider-mob.js"></script>
   </body>
 </html>

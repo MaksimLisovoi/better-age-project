@@ -1,0 +1,25 @@
+#gallery-scrollbar {
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+
+  background-color: $beige-text-color;
+  height: 2px;
+  margin-top: 50px;
+
+  @include for-size(tablet-landscape) {
+    width: 70%;
+  }
+}
+#gallery-scrollbar .swiper-scrollbar-drag {
+  background-color: $blue-bg-color;
+  height: 8px;
+}
+
+.section__gallery {
+  background-color: $gray-bg-color;
+}

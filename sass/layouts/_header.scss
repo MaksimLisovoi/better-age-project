@@ -129,12 +129,31 @@
   color: inherit;
 
   @include for-size(tablet-landscape) {
-    font-size: 16px;
-    line-height: 1.18;
+    font-size: 12px;
   }
 
-  @include for-size(tablet-landscape) {
-    font-size: 12px;
+  @include for-size(desktop) {
+    font-size: 16px;
+    line-height: 1.18;
+
+    padding-bottom: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &:before {
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: $blue-bg-color;
+    transform: translateX(-100%);
+  }
+  &:hover:before {
+    transform: translateX(0);
   }
 }
 
@@ -156,6 +175,11 @@
   @include for-size(tablet-landscape) {
     display: block;
     font-size: 12px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 16px;
+    padding-bottom: 6px;
   }
 }
 .header__btn.btn {
@@ -221,3 +245,15 @@
   transition: all 0.3s ease-in;
   margin: 0;
 }
+
+// .menu__link:before {
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 2px;
+//   background: $blue-bg-color;
+//   transform: translateX(-100%);
+// }
+// .menu__link:hover:before {
+//   transform: translateX(0);
+// }

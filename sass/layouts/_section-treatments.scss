@@ -83,6 +83,7 @@
 
   @include for-size(desktop) {
     padding-top: 170px;
+    height: 403px;
   }
 }
 .item-treatment__img {
@@ -109,6 +110,7 @@
     padding: 20px 20px;
   }
 }
+
 .item-treatment__descr-block.descr-block__blue {
   background-color: $blue-bg-color;
   color: $beige-text-color;
@@ -135,6 +137,7 @@
   @include for-size(desktop) {
     font-size: 20px;
     margin-bottom: 30px;
+    transition: font-size 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
 .item-treatment__icon {
@@ -166,6 +169,7 @@
 
   @include for-size(desktop) {
     font-size: 12px;
+    transition: font-size 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
 .treatments__btn {
@@ -207,3 +211,45 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.item-treatment__descr-block {
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  // transition: all 400ms ease-in;
+}
+
+.treatment__item:hover .item-treatment__descr-block {
+  @include for-size(desktop) {
+    flex: 0 1 270px;
+
+    // height: 270px;
+  }
+}
+.treatment__item:hover .item-treatment__block {
+  @include for-size(desktop) {
+    padding-top: 133px;
+  }
+}
+.treatment__item:hover .item-treatment__title {
+  @include for-size(desktop) {
+    font-size: 22px;
+  }
+}
+.treatment__item:hover .item-treatment__description {
+  @include for-size(desktop) {
+    font-size: 14.5px;
+  }
+}
+
+//  &:hover,
+//   &:focus.item-treatment__block {
+//     @include for-size(desktop) {
+//       padding-top: 120px;
+//     }
+//   }
+//   &:hover,
+//   &:focus.item-treatment__descr-block {
+//     @include for-size(desktop) {
+//       flex: 0 1 270px;
+//       height: 270px;
+//     }
+//   }

@@ -16,8 +16,6 @@
   }
 }
 
-.offer__container {
-}
 .offer__card {
   z-index: 2;
 
@@ -208,6 +206,12 @@
 
   @include for-size(desktop) {
     min-height: 60px;
+    transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &:hover {
+      background-color: $light-blue-bg-color;
+      color: $beige-text-color;
+    }
   }
 }
 

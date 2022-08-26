@@ -58,6 +58,7 @@ if (window.innerWidth > 767) {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    speed: 800,
 
     // If we need pagination
     pagination: {

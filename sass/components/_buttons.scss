@@ -23,5 +23,13 @@
   @include for-size(desktop) {
     font-size: 16px;
     min-height: 50px;
+
+    border: 1px solid $blue-bg-color;
+    transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &:hover {
+      background-color: $light-blue-bg-color;
+      color: $beige-text-color;
+    }
   }
 }
