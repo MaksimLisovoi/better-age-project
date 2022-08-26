@@ -829,6 +829,7 @@ img {
 @media (min-width: 1200px) {
   .treatment__item:hover .item-treatment__descr-block {
     flex: 0 1 270px;
+    height: 270px;
   }
 }
 

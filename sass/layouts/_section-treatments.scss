@@ -106,6 +106,7 @@
   }
   @include for-size(desktop) {
     flex: 0 1 230px;
+    // height: auto;
 
     padding: 20px 20px;
   }
@@ -221,7 +222,7 @@
   @include for-size(desktop) {
     flex: 0 1 270px;
 
-    // height: 270px;
+    height: 270px;
   }
 }
 .treatment__item:hover .item-treatment__block {
