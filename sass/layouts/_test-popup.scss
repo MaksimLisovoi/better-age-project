@@ -1,0 +1,316 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  opacity: 0;
+  visibility: hidden;
+  background-color: $gray-bg-color;
+
+  transition: opacity 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+  &--is-open {
+    visibility: visible;
+    opacity: 1;
+  }
+  // .popup__body
+
+  &__body {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__logo-link {
+    position: absolute;
+
+    left: 0;
+
+    @include for-size(tablet-landscape) {
+      top: 30px;
+    }
+
+    @include for-size(desktop) {
+      top: 50px;
+    }
+  }
+
+  &__logo-link .icon-logo {
+    @include for-size(tablet-landscape) {
+      width: 148px;
+      height: 42px;
+    }
+
+    @include for-size(desktop) {
+    }
+  }
+
+  // .popup__container
+
+  // .popup__content
+
+  &__content {
+    background-color: $gray-bg-color;
+    padding-top: 100px;
+
+    @include for-size(tablet-landscape) {
+      padding: 168px 62px 0 62px;
+    }
+
+    @include for-size(desktop) {
+      flex: 0 1 50%;
+      padding: 255px 96px 70px 96px;
+    }
+  }
+
+  // .popup__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    @include for-size(tablet-landscape) {
+      width: 40px;
+      height: 40px;
+      margin-right: 16px;
+    }
+  }
+
+  // .popup__question
+
+  &__question {
+    font-family: 'Oswald';
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 160%;
+    font-size: 14px;
+    margin-bottom: 30px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 20px;
+      line-height: 150%;
+      margin-bottom: 40px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+  }
+
+  // .popup__answer
+
+  &__answer {
+    display: flex;
+    align-items: center;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 150%;
+    font-size: 14px;
+
+    @include for-size(tablet-landscape) {
+      font-size: 20px;
+      line-height: 150%;
+    }
+  }
+  &__answer:not(:last-child) {
+    margin-bottom: 20px;
+    @include for-size(tablet-landscape) {
+      margin-bottom: 26px;
+    }
+    @include for-size(desktop) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // .popup__img
+
+  &__img-block {
+    // flex: 0 1 50%;
+    // background-color: $light-blue-bg-color;
+    background-color: $gray-bg-color;
+
+    padding-top: 100px;
+
+    @include for-size(tablet-landscape) {
+      display: flex;
+      justify-content: center;
+      padding-top: 110px;
+    }
+
+    @include for-size(desktop) {
+      justify-content: flex-start;
+      flex: 0 1 50%;
+      padding: 190px 0 70px 108px;
+    }
+  }
+
+  &__img-block img {
+    width: 100%;
+  }
+}
+.popup-btn {
+  position: absolute;
+
+  right: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: baseline;
+
+  @include for-size(tablet-landscape) {
+    top: 30px;
+  }
+
+  @include for-size(desktop) {
+    top: 50px;
+  }
+
+  &__icon {
+    fill: $primary-text-color;
+
+    @include for-size(tablet-landscape) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @include for-size(desktop) {
+      fill: $beige-text-color;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  // .popup-btn__text
+
+  &__text {
+    display: none;
+
+    @include for-size(tablet-landscape) {
+      display: block;
+
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      text-transform: uppercase;
+      font-size: 24px;
+
+      color: $primary-text-color;
+      margin-right: 23px;
+    }
+
+    @include for-size(desktop) {
+      color: $beige-text-color;
+      font-size: 30px;
+      margin-right: 17px;
+    }
+  }
+}
+
+.popup-controls {
+  // .popup__controls
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+
+  @include for-size(tablet-landscape) {
+    left: 61px;
+    bottom: 70px;
+  }
+
+  @include for-size(desktop) {
+    justify-content: start;
+    left: 96px;
+    bottom: 70px;
+  }
+  // .popup-controls__btn
+
+  &__btn {
+    min-height: 50px;
+
+    width: 100%;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: $blue-bg-color;
+    border: 1px solid $blue-bg-color;
+
+    @include for-size(tablet-landscape) {
+      min-height: 50px;
+      width: 230px;
+    }
+
+    @include for-size(desktop) {
+      min-height: 60px;
+      width: 168px;
+    }
+  }
+
+  // .popup-controls__btn-back
+
+  &__btn-back {
+    background-color: transparent;
+    color: $primary-text-color;
+
+    margin-right: 30px;
+
+    @include for-size(tablet-landscape) {
+      margin-right: 16px;
+    }
+
+    @include for-size(desktop) {
+      margin-right: 24px;
+    }
+  }
+
+  // .popup-controls__btn-next
+
+  &__btn-next {
+  }
+}
+
+.popup__slider .swiper-slide {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+
+  height: 100vh;
+
+  @include for-size(desktop) {
+    flex-direction: row;
+  }
+}
+.popup__slide {
+  display: flex;
+}
+
+// .popup__body .popup__logo-link {
+//   @include for-size(tablet-landscape) {
+//     width: 148px;
+//     height: 24px;
+//   }
+
+//   @include for-size(desktop) {
+//   }
+// }
