@@ -24,7 +24,7 @@ const swiper = new Swiper('.popup__slider', {
     nextEl: '.popup-controls__btn-next',
     prevEl: '.popup-controls__btn-back',
   },
-  spaceBetween: 50,
+  spaceBetween: 30,
 
   autoHeigth: true,
 

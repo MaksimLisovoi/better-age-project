@@ -19,4 +19,7 @@ const whatElseSlider = new Swiper('.what-else__slider', {
   // autoHeight: true,
 
   initialSlide: 1,
+  mousewheel: {
+    sensitivity: 1,
+  },
 });
